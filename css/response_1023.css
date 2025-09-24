@@ -1,0 +1,590 @@
+@media print,
+(max-width: 1023px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --sidebar_width: 100%;
+    }
+
+
+    .content_flex .content
+    {
+        width: 100%;
+    }
+
+
+    .bg_block.soft
+    {
+        padding-block: var(--block_offset);
+    }
+
+
+
+    /*----------
+        Tabs
+    ----------*/
+    .tabs
+    {
+        display: block;
+        overflow: auto;
+
+        width: calc(100% + var(--cont_padding_double));
+        margin: 0 calc(var(--cont_padding) * -1) 20px;
+        padding: 0 var(--cont_padding);
+
+        white-space: nowrap;
+
+        scroll-padding: 0 var(--cont_padding);
+        scroll-snap-type: x mandatory;
+        scrollbar-color: transparent transparent !important;
+        scrollbar-width: thin !important;
+    }
+
+
+    .tabs::-webkit-scrollbar
+    {
+        display: none !important;
+
+        width: 0 !important;
+        height: 0 !important;
+
+        background-color: transparent !important;
+    }
+
+
+    .tabs::-webkit-scrollbar-thumb
+    {
+        background-color: transparent !important;
+    }
+
+
+    .tabs > .btn
+    {
+        display: inline-block;
+
+        max-width: none;
+        margin: 0;
+
+        vertical-align: top;
+
+        scroll-snap-align: start;
+    }
+
+
+    .tabs > .btn + .btn
+    {
+        margin-left: 8px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header
+    {
+        position: fixed;
+        top: 0;
+        right: 100%;
+        left: auto;
+
+        width: 325px;
+        height: 100%;
+        min-height: -moz-available;
+        min-height: -webkit-fill-available;
+        min-height:         fill-available;
+        margin: 0;
+        padding: 0;
+
+        z-index: 101;
+        transition: transform .3s linear;
+
+        background: var(--bg);
+    }
+
+
+    header.show
+    {
+        transform: translateX(100%);
+    }
+
+
+    header .scroll
+    {
+        display: flex;
+        overflow: auto;
+        flex-direction: column;
+
+        height: 100%;
+        min-height: -moz-available;
+        min-height: -webkit-fill-available;
+        min-height:         fill-available;
+        padding-block: var(--cont_padding);
+
+        overscroll-behavior-y: contain;
+    }
+
+
+    header .top
+    {
+        order: 2;
+
+        margin-top: var(--cont_padding);
+        padding-block: var(--block_padding) 0;
+    }
+
+
+    header .top:after
+    {
+        top: 0;
+        bottom: auto;
+    }
+
+
+    header .top .cont
+    {
+        gap: var(--gap_big);
+    }
+
+
+
+    header .data
+    {
+        padding-block: 0;
+    }
+
+
+
+    header .contacts
+    {
+        width: 100%;
+
+        gap: var(--gap_big);
+    }
+
+
+
+    header .logo
+    {
+        display: none;
+    }
+
+
+
+    header .menu
+    {
+        flex-direction: column;
+
+        width: 100%;
+        margin-left: 0;
+
+        gap: var(--cont_padding);
+    }
+
+
+
+    header .order_btn
+    {
+        margin-top: var(--cont_padding);
+        margin-left: 0;
+    }
+
+
+    header .account
+    {
+        margin-top: var(--cont_padding);
+    }
+
+
+
+    /*-----------------
+        Mob. header
+    -----------------*/
+    .mob_header
+    {
+        display: block;
+    }
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .page_head .links
+    {
+        display: block;
+        overflow: auto;
+
+        width: calc(100% + var(--cont_padding_double));
+        margin: 0 calc(var(--cont_padding) * -1);
+        padding: 0 var(--cont_padding);
+
+        white-space: nowrap;
+
+        scroll-padding: 0 var(--cont_padding);
+        scroll-snap-type: x mandatory;
+        scrollbar-color: transparent transparent !important;
+        scrollbar-width: thin !important;
+    }
+
+
+    .page_head .links::-webkit-scrollbar
+    {
+        display: none !important;
+
+        width: 0 !important;
+        height: 0 !important;
+
+        background-color: transparent !important;
+    }
+
+
+    .page_head .links::-webkit-scrollbar-thumb
+    {
+        background-color: transparent !important;
+    }
+
+
+    .page_head .links > *
+    {
+        display: inline-block;
+
+        max-width: none;
+        margin: 0;
+
+        vertical-align: top;
+
+        scroll-snap-align: start;
+    }
+
+
+    .page_head .links > * + *
+    {
+        margin-left: 8px;
+    }
+
+
+
+    /*-------------
+        Sidebar
+    -------------*/
+    aside
+    {
+        margin-bottom: var(--cont_padding);
+    }
+
+
+
+    aside .links a
+    {
+        padding: 8px;
+    }
+
+
+
+    /*-----------------
+        Main slider
+    -----------------*/
+    .main_slider .img
+    {
+        display: none;
+    }
+
+
+
+    /*------------------
+        Action block
+    ------------------*/
+    .action_block .info
+    {
+        width: 100%;
+    }
+
+
+    .action_block .form
+    {
+        width: 100%;
+        margin-top: var(--block_padding_big);
+    }
+
+
+
+    /*-------------
+        Charity
+    -------------*/
+    .charity .grid > *
+    {
+        width: calc(33.333% - var(--block_padding));
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .item
+    {
+        width: 100%;
+    }
+
+
+    .contacts_info .requisites .image
+    {
+        left: -120px;
+    }
+
+
+    .contacts_info .requisites .image img
+    {
+        min-width: 140px;
+    }
+
+
+    .contacts_info .requisites .text_block
+    {
+        width: 324px;
+    }
+
+
+
+    /*------------------
+        For partners
+    ------------------*/
+    .for_partners .grid > *
+    {
+        width: calc(50% - var(--cont_padding));
+    }
+
+
+
+    /*------------
+        Why we
+    ------------*/
+    .why_we .grid > *
+    {
+        width: calc(50% - var(--cont_padding));
+    }
+
+
+    .why_we .item.white
+    {
+        min-height: 188px;
+    }
+
+
+
+    /*--------------
+        Services
+    --------------*/
+    .services .grid
+    {
+        grid-template-columns: 260px 1fr 1fr;
+    }
+
+
+    .services .slider .item .title br
+    {
+        display: none;
+    }
+
+
+
+    /*------------
+        Steps
+    ------------*/
+    .steps .grid > *
+    {
+        width: calc(50% - var(--cont_padding));
+    }
+
+
+    .steps .step
+    {
+        min-height: 168px;
+    }
+
+
+
+    /*----------------
+        Advantages
+    ----------------*/
+    .advantages .grid > *
+    {
+        width: calc(50% - var(--cont_padding));
+    }
+
+
+    .advantages .item
+    {
+        min-height: 188px;
+    }
+
+
+
+    /*-----------------
+        Suitable if
+    -----------------*/
+    .suitable_if .grid > *
+    {
+        width: calc(50% - var(--cont_padding));
+    }
+
+
+
+    /*---------------------
+        Loan conditions
+    ---------------------*/
+    .loan_conditions .grid
+    {
+        grid-template-columns: 288px 1fr;
+    }
+
+
+    .loan_conditions .important .info
+    {
+        font-size: var(--font_size);
+    }
+
+
+
+    /*--------------------------
+        Following conditions
+    --------------------------*/
+    .following_conditions .grid > *
+    {
+        width: calc(50% - var(--cont_padding));
+    }
+
+
+    .following_conditions .item
+    {
+        min-height: 188px;
+    }
+
+
+
+    /*-----------------------
+        Load requirements
+    -----------------------*/
+    .loan_requirements .grid > *
+    {
+        width: calc(50% - var(--cont_padding));
+    }
+
+
+    .loan_requirements .item
+    {
+        min-height: 188px;
+    }
+
+
+
+    /*------------------
+        Loan objects
+    ------------------*/
+    .loan_objects .item .name
+    {
+        font-size: var(--font_size);
+    }
+
+
+
+    /*-----------------
+        Service for
+    -----------------*/
+    .service_for .image
+    {
+        left: -120px;
+    }
+
+
+    .service_for .image img
+    {
+        min-width: 140px;
+    }
+
+
+    .service_for .text_block
+    {
+        width: 324px;
+    }
+
+
+
+    /*---------------
+        Documents
+    ---------------*/
+    .documents .grid > *
+    {
+        width: calc(50% - var(--cont_padding));
+    }
+
+
+    .documents .item
+    {
+        min-height: 188px;
+    }
+
+
+
+    /*--------------
+        Benefits
+    --------------*/
+    .benefits .grid > *
+    {
+        width: calc(50% - var(--cont_padding));
+    }
+
+
+    .benefits .item
+    {
+        min-height: 188px;
+    }
+
+
+
+    /*----------
+        Calc
+    ----------*/
+    .calc .form .grid > *
+    {
+        width: calc(50% - var(--gap_big));
+    }
+
+
+    .calc .form .grid > *:last-child
+    {
+        width: calc(100% - var(--gap_big));
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .data .cont
+    {
+        flex-wrap: wrap;
+    }
+
+
+    footer .menu
+    {
+        order: 2;
+
+        width: calc(100% + var(--block_padding_big) * .5);
+        margin-left: calc(var(--block_padding_big) * -.5);
+
+        gap: 0;
+    }
+
+
+    footer .menu .item
+    {
+        width: calc(25% - var(--block_padding_big) * .5);
+        margin-left: calc(var(--block_padding_big) * .5);
+    }
+}

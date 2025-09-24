@@ -1,0 +1,449 @@
+@media print,
+(max-width: 1279px)
+{
+    /*--------
+        LK
+    --------*/
+    .lk
+    {
+        --content_width: 100%;
+        --sidebar_width: 325px;
+    }
+
+
+
+    .lk aside
+    {
+        right: 100%;
+        left: auto;
+
+        z-index: 101;
+        transition: transform .3s linear;
+    }
+
+
+    .lk aside.show
+    {
+        transform: translateX(100%);
+    }
+
+
+    .lk aside .logo
+    {
+        display: none;
+    }
+
+
+    .lk aside .menu .link
+    {
+        padding: 8px var(--block_padding_small) 8px 8px;
+
+        white-space: nowrap;
+    }
+
+
+
+    .lk .content
+    {
+        width: var(--content_width);
+    }
+
+
+
+    /*-----------------
+        LK - Header
+    -----------------*/
+    .lk .header .mob_menu_btn
+    {
+        display: flex;
+    }
+
+
+    .lk .header .mini_modal
+    {
+        right: -12px;
+
+        min-width: 140px;
+        margin-top: 12px;
+    }
+
+
+    .lk .header .nitifications .mini_modal
+    {
+        width: 350px;
+    }
+
+
+
+    /*------------------------
+        LK - First section
+    ------------------------*/
+    .lk .first_section .btn
+    {
+        padding-block: 8px;
+    }
+
+
+
+    /*----------------
+        LK - Loans
+    ----------------*/
+    .loans .loan
+    {
+        padding-inline: var(--cont_padding);
+    }
+
+
+    .loans .loan .payment .btn
+    {
+        height: 40px;
+    }
+
+
+    .loans .loan .progress
+    {
+        margin-top: 0;
+
+        gap: 12px var(--gap_big);
+    }
+
+
+
+    /*-------------------
+        LK - Services
+    -------------------*/
+    .services table td
+    {
+        padding-block: 8px;
+    }
+
+
+    .services table td.loan
+    {
+        width: 260px;
+        padding-right: 12px;
+    }
+
+
+    .services table td .btn
+    {
+        height: 40px;
+    }
+
+
+
+    /*----------------------
+        LK - Autopayment
+    ----------------------*/
+    .bottom_block .autopayment
+    {
+        width: calc(50% - var(--cont_padding_half));
+    }
+
+
+    .autopayment .info
+    {
+        min-height: 250px;
+    }
+
+
+    .autopayment .info .status > span
+    {
+        width: 70px;
+    }
+
+
+    .autopayment .info .card
+    {
+        padding-top: 12px;
+    }
+
+
+    .autopayment .info .card .number
+    {
+        padding-block: 6px;
+    }
+
+
+    .autopayment .info .card .btn
+    {
+        height: 40px;
+    }
+
+
+    .autopayment .enabled_btn
+    {
+        height: 40px;
+    }
+
+
+
+    /*-----------------
+        LK - Stocks
+    -----------------*/
+    .bottom_block .stocks
+    {
+        width: calc(50% - var(--cont_padding_half));
+    }
+
+
+    .stocks .item
+    {
+        min-height: 240px;
+    }
+
+
+    .stocks .item .link a
+    {
+        padding-block: 9px;
+    }
+
+
+
+    /*----------------
+        LK - Cards
+    ----------------*/
+    .cards .add_btn
+    {
+        height: 40px;
+        padding-block: 0;
+    }
+
+
+
+    .cards .grid
+    {
+        margin-top: var(--block_offset);
+        margin-bottom: calc(var(--cont_padding) * -1);
+        margin-left: calc(var(--cont_padding) * -1);
+    }
+
+
+    .cards .grid > *
+    {
+        width: calc(50% - var(--cont_padding));
+        margin-bottom: var(--cont_padding);
+        margin-left: var(--cont_padding);
+    }
+
+
+
+    .cards .card .info
+    {
+        min-height: 0;
+    }
+
+
+    .cards .card .info .status > span
+    {
+        width: 70px;
+    }
+
+
+    .cards .card .info .bottom
+    {
+        padding-top: 0;
+    }
+
+
+    .cards .card .info .number
+    {
+        padding-block: 6px;
+    }
+
+
+    .cards .card .info .btn
+    {
+        height: 40px;
+    }
+
+
+
+    /*--------------------
+        LK - Loan info
+    --------------------*/
+    .loan_info .data .item
+    {
+        width: 260px;
+    }
+
+
+    .loan_info .data .item.payment,
+    .loan_info .data .item.next_payment
+    {
+        width: calc(100% - 560px);
+    }
+
+
+    .loan_info .data .item .label
+    {
+        margin-bottom: 8px;
+    }
+
+
+    .loan_info .data .item .info
+    {
+        min-height: 0;
+    }
+
+
+    .loan_info .data .item .autopayment_status,
+    .loan_info .data .item .days,
+    .loan_info .data .item .register_number,
+    .loan_info .data .item .autopayment_notice
+    {
+        padding: 4px 8px;
+    }
+
+
+    .loan_info .data .payment .btn
+    {
+        height: 40px;
+    }
+
+
+
+    /*--------------------------
+        LK - Payment history
+    --------------------------*/
+    .payment_history .load_more
+    {
+        margin-top: var(--cont_padding);
+    }
+
+
+
+    /*-----------------------
+        LK - Payment form
+    -----------------------*/
+    .payment_form .line
+    {
+        margin-bottom: 0;
+    }
+
+
+    .payment_form .input
+    {
+        height: 40px;
+    }
+
+
+    .payment_form .tips
+    {
+        margin-top: var(--gap);
+    }
+
+
+    .payment_form .exp
+    {
+        margin: 0;
+    }
+
+
+
+    /*------------------------
+        LK - Referral stats
+    ------------------------*/
+    .referral_stats .item .icon
+    {
+        top: 17px;
+    }
+
+
+    .referral_stats .item .btn
+    {
+        height: 40px;
+        padding-block: 0;
+    }
+
+
+
+    /*------------------------
+        LK - Profile stats
+    ------------------------*/
+    .profile_stats .item .icon
+    {
+        top: 18px;
+    }
+
+
+
+    /*-----------------------
+        LK - Pesonal data
+    -----------------------*/
+    .personal_data .data
+    {
+        gap: var(--cont_padding);
+    }
+
+
+
+    .personal_data .input
+    {
+        height: 40px;
+    }
+
+
+    .personal_data .edit_btn,
+    .personal_data .save_btn
+    {
+        width: 180px;
+        height: 40px;
+    }
+
+
+
+    .personal_data .upload .btn
+    {
+        height: 40px;
+        padding-block: 0;
+    }
+
+
+
+    /*-------------------------------------
+        PopUp - Enable autopayment info
+    -------------------------------------*/
+    #enable_autopayment_info_modal .step .example .btn
+    {
+        height: 40px;
+    }
+
+
+
+    /*--------------------------------
+        PopUp - Enable autopayment
+    --------------------------------*/
+    #enable_autopayment_modal .bottom .btn
+    {
+        height: 40px;
+    }
+
+
+
+    /*---------------------------
+        PopUp - Confirm email
+    ---------------------------*/
+    #confirm_email_modal .email
+    {
+        width: 220px;
+        height: 40px;
+    }
+
+
+
+    /*--------------------
+        PopUp - Upload
+    --------------------*/
+    #upload_modal .files,
+    #upload_modal .bottom
+    {
+        margin-top: var(--cont_padding);
+    }
+
+
+    #upload_modal .bottom .btn
+    {
+        height: 40px;
+    }
+}

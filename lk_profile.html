@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+		<!-- Adapting the page for mobile devices -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Prohibition of phone number recognition -->
+		<meta name="format-detection" content="telephone=no">
+		<meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+		<!-- Page title -->
+		<title>Заголовок страницы</title>
+
+		<!-- Meta description -->
+		<meta name="description" content="">
+
+		<!-- Meta Keywords -->
+		<meta name="keywords" content="">
+
+		<!-- Changing the color of the mobile browser panel -->
+		<meta name="msapplication-TileColor" content="#1B16BC">
+		<meta name="theme-color" content="#1B16BC">
+
+		<!-- Connecting fonts from Google -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+		<!-- Connecting style files -->
+		<link rel="stylesheet" href="css/swiper-bundle.min.css">
+		<link rel="stylesheet" href="css/swiper.css">
+		<link rel="stylesheet" href="css/fancybox.css">
+		<link rel="stylesheet" href="css/ion.rangeSlider.css">
+		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="css/lk.css">
+
+		<link rel="stylesheet" href="css/response_1279.css" media="print, (max-width: 1279px)">
+		<link rel="stylesheet" href="css/response_1023.css" media="print, (max-width: 1023px)">
+		<link rel="stylesheet" href="css/response_767.css" media="print, (max-width: 767px)">
+		<link rel="stylesheet" href="css/response_479.css" media="(max-width: 479px)">
+
+		<link rel="stylesheet" href="css/lk_response_1439.css" media="print, (max-width: 1439px)">
+		<link rel="stylesheet" href="css/lk_response_1279.css" media="print, (max-width: 1279px)">
+		<link rel="stylesheet" href="css/lk_response_1023.css" media="print, (max-width: 1023px)">
+		<link rel="stylesheet" href="css/lk_response_767.css" media="print, (max-width: 767px)">
+		<link rel="stylesheet" href="css/lk_response_479.css" media="(max-width: 479px)">
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="main">
+				<section class="lk">
+					<aside>
+						<button class="mob_close_btn"></button>
+
+						<a href="/" class="logo">
+							<img src="images/logo.svg" alt="">
+						</a>
+
+						<div class="menu">
+							<div>
+								<a href="/" class="link">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_home"></use></svg>
+									<span>Рабочий стол</span>
+								</a>
+							</div>
+
+							<div>
+								<a href="/" class="link">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_percents"></use></svg>
+									<span>Мои займы</span>
+								</a>
+
+								<div class="sub">
+									<div>№ 123456 – 150 000 ₽</div>
+									<div>№ 654321 – 100 000 ₽</div>
+								</div>
+							</div>
+
+							<div>
+								<a href="/" class="link">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_document"></use></svg>
+									<span>Заявки на займ</span>
+								</a>
+
+								<div class="sub">
+									<div>№ 00001 – 500 000 ₽</div>
+								</div>
+							</div>
+
+							<div>
+								<a class="link active">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_user"></use></svg>
+									<span>Профиль</span>
+								</a>
+							</div>
+
+							<div>
+								<a href="/" class="link">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_cards"></use></svg>
+									<span>Карты и автоплатежи</span>
+								</a>
+							</div>
+
+							<div>
+								<a href="/" class="link">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_users"></use></svg>
+									<span>Пригласить друга</span>
+								</a>
+							</div>
+
+							<div>
+								<a href="/" class="link">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_phone"></use></svg>
+									<span>Контакты</span>
+								</a>
+							</div>
+						</div>
+					</aside>
+
+
+					<section class="content">
+						<section class="header">
+							<div class="cont row">
+								<button class="mob_menu_btn">
+									<span></span>
+								</button>
+
+								<div class="nitifications modal_cont">
+									<button class="btn mini_modal_btn" data-modal-id="#nitifications_mini_modal">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_notification"></use></svg>
+
+										<span>Уведомления</span>
+
+										<span class="count">5</span>
+									</button>
+
+									<div class="mini_modal" id="nitifications_mini_modal">
+										<div class="list">
+											<div class="item warning">
+												<div class="head">
+													<div class="title">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_notice"></use></svg>
+														<span>Напоминаем!</span>
+													</div>
+												</div>
+
+												<div class="desc">Приближается срок оплаты займа №123456. Внесите <span>5 560 руб</span> до <span>06.06.2025</span></div>
+											</div>
+
+											<div class="item danger">
+												<div class="head">
+													<div class="title">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_notice"></use></svg>
+														<span>Внимание!</span>
+													</div>
+												</div>
+
+												<div class="desc">По займу №123456 зафиксирована просрочка платежа. Просим как можно скорее внести сумму <span>5 560 руб</span>.</div>
+											</div>
+
+											<div class="item success">
+												<div class="head">
+													<div class="title">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_success"></use></svg>
+														<span>Поздравляем!</span>
+													</div>
+												</div>
+
+												<div class="desc">Ваш займ №123456 успешно закрыт.<br> Спасибо за доверие — рады быть вам полезны!</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+								<div class="account modal_cont">
+									<button class="btn mini_modal_btn" data-modal-id="#account_mini_modal">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_user"></use></svg>
+
+										<span>Профиль</span>
+
+										<svg class="arr"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+									</button>
+
+									<div class="mini_modal" id="account_mini_modal">
+										<div class="links">
+											<div><a href="/">Редактировать</a></div>
+
+											<div><a href="/">Выйти</a></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+
+
+						<section class="profile_stats block">
+							<div class="cont">
+								<div class="block_head">
+									<div class="title">Профиль</div>
+								</div>
+
+								<div class="grid row">
+									<div class="item">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_success"></use></svg>
+
+										<div class="val">2</div>
+
+										<div class="name">Открытых займов</div>
+									</div>
+
+									<div class="item closed">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_success"></use></svg>
+
+										<div class="val">1</div>
+
+										<div class="name">Закрытых займов</div>
+									</div>
+
+									<div class="item expired">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_notice"></use></svg>
+
+										<div class="val">1</div>
+
+										<div class="name">Просроченных займов</div>
+									</div>
+								</div>
+							</div>
+						</section>
+
+
+						<section class="personal_data block">
+							<div class="cont">
+								<div class="block_head small_m">
+									<div class="title">Личные данные</div>
+								</div>
+
+								<div class="data">
+									<div class="info">
+										<div class="item">
+											<div class="label">ФИО</div>
+
+											<div class="val">Кириенко Сергей Петрович</div>
+										</div>
+
+										<div class="item">
+											<div class="label">Телефон</div>
+
+											<div class="val">+7 (123) 456-78-90</div>
+										</div>
+
+										<div class="item">
+											<div class="label">Электронная почта</div>
+
+											<div class="line">
+												<div class="field">
+													<input type="email" name="email" value="example@mail.ru" class="input success" readonly>
+
+													<svg class="icon success_icon"><use xlink:href="images/sprite.svg#ic_success"></use></svg>
+
+													<svg class="icon failed_icon"><use xlink:href="images/sprite.svg#ic_notice"></use></svg>
+												</div>
+
+												<button class="edit_btn">
+													<svg class="icon"><use xlink:href="images/sprite.svg#ic_edit"></use></svg>
+													<span>Редактировать</span>
+												</button>
+
+												<button class="save_btn modal_btn" data-modal="confirm_email_modal">
+													<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+													<span>Сохранить</span>
+												</button>
+											</div>
+										</div>
+
+										<div class="item">
+											<div class="label">Пароль</div>
+
+											<div class="line">
+												<div class="field">
+													<input type="password" name="password" value="8888888" class="input filled" readonly>
+
+													<button class="toggle_type_btn">
+														<svg><use xlink:href="images/sprite.svg#ic_eye_close"></use></svg>
+														<svg><use xlink:href="images/sprite.svg#ic_eye"></use></svg>
+													</button>
+												</div>
+
+												<button class="edit_btn">
+													<svg class="icon"><use xlink:href="images/sprite.svg#ic_edit"></use></svg>
+													<span>Редактировать</span>
+												</button>
+
+												<button class="save_btn">
+													<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+													<span>Сохранить</span>
+												</button>
+											</div>
+										</div>
+									</div>
+
+									<div class="upload">
+										<div class="title">Изменились паспортные данные?</div>
+
+										<div class="desc">Хотите получать приятные бонусы за рекомендации? Участвуйте в нашей акции «Приведи друга» и <b>получайте 1% от суммы займа</b>, оформленного по вашей рекомендации!</div>
+
+										<button class="btn modal_btn" data-modal="upload_modal">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_upload"></use></svg>
+											<span>Загрузить новые данные</span>
+										</button>
+									</div>
+								</div>
+							</div>
+						</section>
+
+
+						<section class="bottom_block block">
+							<div class="cont row">
+								<div class="autopayment">
+									<div class="block_head small_m">
+										<div class="title">Автоплатеж</div>
+									</div>
+
+									<div class="text_block">
+										<p>У вас нет активных автоплатежей.<br> Подключите карту для удобной оплаты прямо сейчас.</p>
+									</div>
+
+									<button class="enabled_btn modal_btn" data-modal="enable_autopayment_info_modal">Подключить</button>
+								</div>
+
+								<div class="stocks">
+									<div class="block_head small_m">
+										<div class="title">Акции</div>
+									</div>
+
+									<div class="item">
+										<div class="name">«Приведи друга» — получи бонус!</div>
+
+										<div class="desc">Хотите получать приятные бонусы за рекомендации? Участвуйте в нашей акции «Приведи друга» и <b>получайте 1% от суммы займа,</b> оформленного по вашей рекомендации!</div>
+
+										<div class="link">
+											<a href="/">Подробнее</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+
+
+						<section class="footer">
+							<div class="cont row">
+								<div class="links">
+									<div><a href="/">Пользовательское соглашение</a></div>
+
+									<div><a href="/">Соглашение об электронном взаимодействии</a></div>
+
+									<div><a href="/">Политика безопасности платежей</a></div>
+
+									<div><a href="/">Документы и свидетельства</a></div>
+								</div>
+
+								<div class="socials">
+									<a href="/" target="_blank" rel="noopener nofollow">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_vk"></use></svg>
+									</a>
+
+									<a href="/" target="_blank" rel="noopener nofollow">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_whatsapp"></use></svg>
+									</a>
+
+									<a href="/" target="_blank" rel="noopener nofollow">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_youtube"></use></svg>
+									</a>
+
+									<a href="/" target="_blank" rel="noopener nofollow">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_tg"></use></svg>
+									</a>
+								</div>
+							</div>
+						</section>
+					</section>
+				</section>
+			</div>
+
+			<div class="overlay"></div>
+		</div>
+
+
+		<section class="modal" id="upload_modal">
+			<div class="modal_title">Загрузка новых паспортных данных</div>
+
+			<div class="files">
+				<div class="file">
+					<div class="selected">
+						<span class="icon">
+							<button type="button" class="delete_btn">
+								<svg><use xlink:href="images/sprite.svg#ic_close"></use></svg>
+							</button>
+
+							<svg><use xlink:href="images/sprite.svg#ic_document"></use></svg>
+						</span>
+
+						<span class="info">
+							<span class="name">Паспорт Кириенко Сергей Петрович</span>
+
+							<span class="type">Pdf</span>
+
+							<span class="size">865 Кб</span>
+						</span>
+					</div>
+
+					<label>
+						<input type="file" name="file1">
+
+						<span class="icon">
+							<svg><use xlink:href="images/sprite.svg#ic_upload"></use></svg>
+						</span>
+
+						<span class="info">
+							<span class="label">Загрузить документ</span>
+
+							<span class="size">до 5 Мб</span>
+						</span>
+					</label>
+				</div>
+
+				<div class="file">
+					<div class="selected">
+						<span class="icon">
+							<button type="button" class="delete_btn">
+								<svg><use xlink:href="images/sprite.svg#ic_close"></use></svg>
+							</button>
+
+							<svg><use xlink:href="images/sprite.svg#ic_document"></use></svg>
+						</span>
+
+						<span class="info">
+							<span class="name">Название файла.pdf</span>
+
+							<span class="type">Jpg</span>
+
+							<span class="size">1035 Кб</span>
+						</span>
+					</div>
+
+					<label>
+						<input type="file" name="file1">
+
+						<span class="icon">
+							<svg><use xlink:href="images/sprite.svg#ic_upload"></use></svg>
+						</span>
+
+						<span class="info">
+							<span class="label">Загрузить документ</span>
+
+							<span class="size">до 5 Мб</span>
+						</span>
+					</label>
+				</div>
+
+				<div class="file">
+					<div class="selected error">
+						<span class="icon">
+							<button type="button" class="delete_btn">
+								<svg><use xlink:href="images/sprite.svg#ic_close"></use></svg>
+							</button>
+
+							<svg><use xlink:href="images/sprite.svg#ic_document"></use></svg>
+						</span>
+
+						<span class="info">
+							<span class="name">Название файла.pdf</span>
+
+							<span class="type">Pdf</span>
+
+							<span class="size">6 Мб</span>
+
+							<div class="error_text">Превышен размер файла</div>
+						</span>
+					</div>
+
+					<label>
+						<input type="file" name="file1">
+
+						<span class="icon">
+							<svg><use xlink:href="images/sprite.svg#ic_upload"></use></svg>
+						</span>
+
+						<span class="info">
+							<span class="label">Загрузить документ</span>
+
+							<span class="size">до 5 Мб</span>
+						</span>
+					</label>
+				</div>
+
+				<div class="file">
+					<label>
+						<input type="file" name="file1">
+
+						<span class="icon">
+							<svg><use xlink:href="images/sprite.svg#ic_upload"></use></svg>
+						</span>
+
+						<span class="info">
+							<span class="label">Загрузить документ</span>
+
+							<span class="size">до 5 Мб</span>
+						</span>
+					</label>
+				</div>
+			</div>
+
+			<div class="bottom">
+				<div class="exp">Максимум 4 файла, размером до 5 Мб.<br> Формат jpg, png, pdf.</div>
+
+				<button class="btn">Отправить</button>
+			</div>
+		</section>
+
+
+		<section class="modal" id="confirm_email_modal">
+			<div class="modal_title">Подтверждение изменений</div>
+
+			<div class="modal_desc">Проверьте вашу электронную почту — мы отправили письмо с ссылкой для подтверждения изменения адреса.</div>
+
+			<div class="email">
+				<span>example@mail.ru</span>
+				<svg class="icon"><use xlink:href="images/sprite.svg#ic_notice"></use></svg>
+			</div>
+
+			<div class="modal_desc">После перехода по ссылке из письма, статус нового адреса электронной почты обновится в вашем личном кабинете.</div>
+
+			<div class="btns">
+				<button class="btn accent_btn close_btn">Понятно</button>
+			</div>
+		</section>
+
+
+		<section class="modal" id="enable_autopayment_info_modal">
+			<div class="modal_title">Включить автоплатеж</div>
+
+			<div class="step">
+				<div class="name">Шаг 1 - добавьте банковскую карту для оплаты</div>
+
+				<div class="info">
+					<div class="desc">Заполните форму со всеми необходимыми данными.</div>
+
+					<div class="example">
+						<button class="btn">Добавить карту</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="step">
+				<div class="name">Шаг 2 - включите автоплатеж</div>
+
+				<div class="info">
+					<div class="desc">Сдвиньте переключатель статуса вправо, чтобы включить автоплатеж.</div>
+
+					<div class="example">
+						<div class="label">Статус автопродления</div>
+
+						<div class="status">
+							<span>Выключён</span>
+
+							<label class="toggle">
+								<input type="checkbox" name="autopayment">
+								<span></span>
+							</label>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="btns">
+				<button class="btn accent_btn close_btn">Понятно</button>
+			</div>
+		</section>
+
+
+		<section class="modal" id="enable_autopayment_modal">
+			<div class="modal_title">Условия подключения функции «Автоплатеж»</div>
+
+			<div class="data">
+				<div class="grid row">
+					<div>
+						<div class="label">Дата подключения</div>
+
+						<div class="val">12.08.2025</div>
+					</div>
+
+					<div>
+						<div class="label">Номер карты</div>
+
+						<div class="val">0022 0123 1234 0505</div>
+					</div>
+
+					<div>
+						<div class="label">Статус автопродления</div>
+
+						<div class="val">Выключен</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="info">
+				<div class="grid row">
+					<div>
+						<div class="name">SMS</div>
+
+						<div class="desc">После включения Автоплатежа за 2 дня до очередной даты платежа Вам придет SMS уведомление о предстоящем платеже по соответствующему займу</div>
+					</div>
+
+					<div>
+						<div class="name">Cписание</div>
+
+						<div class="desc">За 1 день до очередной даты платежа произойдет списание суммы платежа по соответствующему займу с выбранной банковской карты</div>
+					</div>
+
+					<div>
+						<div class="name">Займы</div>
+
+						<div class="desc">Автоплатеж применяется к платежам по всем займам</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="text_block">
+				<ul>
+					<li>Если Ваш Банк (выдавший карту) не поддерживает Автоплатеж и/или в случае нехватки денежных средств на вашей карте (и других ошибках) - Вы получите SMS уведомление в момент автоплатежа, в данном случае Вам необходимо внести платеж вручную в Личном кабинете.</li>
+
+					<li>При включении Актоплатежа рекомендуем дополнительно контролировать остаток денежных средств на Вашей банковской карте и SMS сообщения от компании “ВКапитал”.</li>
+				</ul>
+			</div>
+
+			<div class="bottom">
+				<div class="agree">
+					<label class="checkbox">
+						<input type="checkbox" name="agree">
+
+						<div class="check">
+							<svg><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+						</div>
+
+						<div>Я ознакомился с функцией Автоплатеж и готов её включить</div>
+					</label>
+
+					<!-- <label class="checkbox error">
+						<input type="checkbox" name="agree">
+
+						<div class="check">
+							<svg><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+						</div>
+
+						<div>Я ознакомился с функцией Автоплатеж и готов её включить</div>
+					</label> -->
+				</div>
+
+				<button class="btn">Подключить</button>
+			</div>
+		</section>
+
+
+		<!-- Connecting javascript files -->
+		<script src="js/jquery-3.7.1.min.js"></script>
+		<script src="js/functions.js"></script>
+		<script src="js/swiper-bundle.min.js"></script>
+		<script src="js/fancybox.js"></script>
+		<script src="js/imask.js"></script>
+		<script src="js/ion.rangeSlider.min.js"></script>
+		<script src="js/nice-select2.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>

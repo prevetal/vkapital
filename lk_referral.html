@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+		<!-- Adapting the page for mobile devices -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Prohibition of phone number recognition -->
+		<meta name="format-detection" content="telephone=no">
+		<meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+		<!-- Page title -->
+		<title>Заголовок страницы</title>
+
+		<!-- Meta description -->
+		<meta name="description" content="">
+
+		<!-- Meta Keywords -->
+		<meta name="keywords" content="">
+
+		<!-- Changing the color of the mobile browser panel -->
+		<meta name="msapplication-TileColor" content="#1B16BC">
+		<meta name="theme-color" content="#1B16BC">
+
+		<!-- Connecting fonts from Google -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+		<!-- Connecting style files -->
+		<link rel="stylesheet" href="css/swiper-bundle.min.css">
+		<link rel="stylesheet" href="css/swiper.css">
+		<link rel="stylesheet" href="css/fancybox.css">
+		<link rel="stylesheet" href="css/ion.rangeSlider.css">
+		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="css/lk.css">
+
+		<link rel="stylesheet" href="css/response_1279.css" media="print, (max-width: 1279px)">
+		<link rel="stylesheet" href="css/response_1023.css" media="print, (max-width: 1023px)">
+		<link rel="stylesheet" href="css/response_767.css" media="print, (max-width: 767px)">
+		<link rel="stylesheet" href="css/response_479.css" media="(max-width: 479px)">
+
+		<link rel="stylesheet" href="css/lk_response_1439.css" media="print, (max-width: 1439px)">
+		<link rel="stylesheet" href="css/lk_response_1279.css" media="print, (max-width: 1279px)">
+		<link rel="stylesheet" href="css/lk_response_1023.css" media="print, (max-width: 1023px)">
+		<link rel="stylesheet" href="css/lk_response_767.css" media="print, (max-width: 767px)">
+		<link rel="stylesheet" href="css/lk_response_479.css" media="(max-width: 479px)">
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="main">
+				<section class="lk">
+					<aside>
+						<button class="mob_close_btn"></button>
+
+						<a href="/" class="logo">
+							<img src="images/logo.svg" alt="">
+						</a>
+
+						<div class="menu">
+							<div>
+								<a href="/" class="link">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_home"></use></svg>
+									<span>Рабочий стол</span>
+								</a>
+							</div>
+
+							<div>
+								<a href="/" class="link">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_percents"></use></svg>
+									<span>Мои займы</span>
+								</a>
+
+								<div class="sub">
+									<div>№ 123456 – 150 000 ₽</div>
+									<div>№ 654321 – 100 000 ₽</div>
+								</div>
+							</div>
+
+							<div>
+								<a href="/" class="link">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_document"></use></svg>
+									<span>Заявки на займ</span>
+								</a>
+
+								<div class="sub">
+									<div>№ 00001 – 500 000 ₽</div>
+								</div>
+							</div>
+
+							<div>
+								<a href="/" class="link">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_user"></use></svg>
+									<span>Профиль</span>
+								</a>
+							</div>
+
+							<div>
+								<a href="/" class="link">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_cards"></use></svg>
+									<span>Карты и автоплатежи</span>
+								</a>
+							</div>
+
+							<div>
+								<a class="link active">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_users"></use></svg>
+									<span>Пригласить друга</span>
+								</a>
+							</div>
+
+							<div>
+								<a href="/" class="link">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_phone"></use></svg>
+									<span>Контакты</span>
+								</a>
+							</div>
+						</div>
+					</aside>
+
+
+					<section class="content">
+						<section class="header">
+							<div class="cont row">
+								<button class="mob_menu_btn">
+									<span></span>
+								</button>
+
+								<div class="nitifications modal_cont">
+									<button class="btn mini_modal_btn" data-modal-id="#nitifications_mini_modal">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_notification"></use></svg>
+
+										<span>Уведомления</span>
+
+										<span class="count">5</span>
+									</button>
+
+									<div class="mini_modal" id="nitifications_mini_modal">
+										<div class="list">
+											<div class="item warning">
+												<div class="head">
+													<div class="title">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_notice"></use></svg>
+														<span>Напоминаем!</span>
+													</div>
+												</div>
+
+												<div class="desc">Приближается срок оплаты займа №123456. Внесите <span>5 560 руб</span> до <span>06.06.2025</span></div>
+											</div>
+
+											<div class="item danger">
+												<div class="head">
+													<div class="title">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_notice"></use></svg>
+														<span>Внимание!</span>
+													</div>
+												</div>
+
+												<div class="desc">По займу №123456 зафиксирована просрочка платежа. Просим как можно скорее внести сумму <span>5 560 руб</span>.</div>
+											</div>
+
+											<div class="item success">
+												<div class="head">
+													<div class="title">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_success"></use></svg>
+														<span>Поздравляем!</span>
+													</div>
+												</div>
+
+												<div class="desc">Ваш займ №123456 успешно закрыт.<br> Спасибо за доверие — рады быть вам полезны!</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+								<div class="account modal_cont">
+									<button class="btn mini_modal_btn" data-modal-id="#account_mini_modal">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_user"></use></svg>
+
+										<span>Профиль</span>
+
+										<svg class="arr"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+									</button>
+
+									<div class="mini_modal" id="account_mini_modal">
+										<div class="links">
+											<div><a href="/">Редактировать</a></div>
+
+											<div><a href="/">Выйти</a></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+
+
+						<section class="referral_stats block big_m">
+							<div class="cont">
+								<div class="block_head">
+									<div class="title">Пригласить друга</div>
+								</div>
+
+								<div class="text_block">
+									<h3>«Приведи друга» — получи бонус!</h3>
+
+									<p>Хотите получать приятные бонусы за рекомендации?<br> Участвуйте в нашей акции «Приведи друга» и <b>получайте 1% от суммы займа</b>, оформленного по вашей рекомендации!</p>
+								</div>
+
+								<div class="grid row">
+									<div class="item">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_notice"></use></svg>
+
+										<div class="name">Ваш статус</div>
+
+										<div class="status bronze">Бронза</div>
+
+										<div class="desc">До статуса «серебро» 5 человек</div>
+									</div>
+
+									<div class="item">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_notice"></use></svg>
+
+										<div class="name">Друзей <span>1</span></div>
+
+										<button class="btn">
+											<svg><use xlink:href="images/sprite.svg#ic_users"></use></svg>
+											<span>Пригласить друга</span>
+										</button>
+									</div>
+
+									<div class="item">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_notice"></use></svg>
+
+										<div class="name">Баланс <span>1 925,00 ₽</span></div>
+
+										<button class="btn">
+											<svg><use xlink:href="images/sprite.svg#ic_lightning"></use></svg>
+											<span>Вывести бонусы</span>
+										</button>
+									</div>
+								</div>
+							</div>
+						</section>
+
+
+						<section class="operation_history block">
+							<div class="cont">
+								<div class="block_head small_m">
+									<div class="title">История операций</div>
+								</div>
+
+								<div class="text_block">
+									<p>У вас пока нет истории операций</p>
+								</div>
+							</div>
+						</section>
+
+
+						<section class="FAQ block big_m">
+							<div class="cont">
+								<div class="block_head">
+									<div class="title">Вопрос-ответ</div>
+								</div>
+
+								<div class="accordion white">
+									<div class="accordion_item">
+										<div class="head">
+											<div class="title">Когда начисляются мои бонусы?</div>
+
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+										</div>
+
+										<div class="data">
+											<p>Бонусы начисляются в тот момент, когда ваш друг оформил займ в нашей компании</p>
+										</div>
+									</div>
+
+									<div class="accordion_item">
+										<div class="head">
+											<div class="title">Какую выгоду получает приглашенный друг?</div>
+
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+										</div>
+
+										<div class="data">
+											<p>Специалисты компании проведут бесплатную оценку вашего автомобиля, учитывая его состояние, год выпуска, пробег и другие важные параметры. На основе этой оценки будет рассчитан максимальный размер суммы предоставляемого займа. Процентные ставки соответствуют нормам Центробанка РФ, а компания демонстрирует лояльный подход к кредитной истории клиентов.</p>
+										</div>
+									</div>
+
+									<div class="accordion_item">
+										<div class="head">
+											<div class="title">Как посмотреть кто зарегистрировался по моей ссылке?</div>
+
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+										</div>
+
+										<div class="data">
+											<p>Специалисты компании проведут бесплатную оценку вашего автомобиля, учитывая его состояние, год выпуска, пробег и другие важные параметры. На основе этой оценки будет рассчитан максимальный размер суммы предоставляемого займа. Процентные ставки соответствуют нормам Центробанка РФ, а компания демонстрирует лояльный подход к кредитной истории клиентов.</p>
+										</div>
+									</div>
+
+									<div class="accordion_item">
+										<div class="head">
+											<div class="title">Как вывести бонусы?</div>
+
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+										</div>
+
+										<div class="data">
+											<p>Специалисты компании проведут бесплатную оценку вашего автомобиля, учитывая его состояние, год выпуска, пробег и другие важные параметры. На основе этой оценки будет рассчитан максимальный размер суммы предоставляемого займа. Процентные ставки соответствуют нормам Центробанка РФ, а компания демонстрирует лояльный подход к кредитной истории клиентов.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+
+
+						<section class="footer">
+							<div class="cont row">
+								<div class="links">
+									<div><a href="/">Пользовательское соглашение</a></div>
+
+									<div><a href="/">Соглашение об электронном взаимодействии</a></div>
+
+									<div><a href="/">Политика безопасности платежей</a></div>
+
+									<div><a href="/">Документы и свидетельства</a></div>
+								</div>
+
+								<div class="socials">
+									<a href="/" target="_blank" rel="noopener nofollow">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_vk"></use></svg>
+									</a>
+
+									<a href="/" target="_blank" rel="noopener nofollow">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_whatsapp"></use></svg>
+									</a>
+
+									<a href="/" target="_blank" rel="noopener nofollow">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_youtube"></use></svg>
+									</a>
+
+									<a href="/" target="_blank" rel="noopener nofollow">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_tg"></use></svg>
+									</a>
+								</div>
+							</div>
+						</section>
+					</section>
+				</section>
+			</div>
+
+			<div class="overlay"></div>
+		</div>
+
+
+		<!-- Connecting javascript files -->
+		<script src="js/jquery-3.7.1.min.js"></script>
+		<script src="js/functions.js"></script>
+		<script src="js/swiper-bundle.min.js"></script>
+		<script src="js/fancybox.js"></script>
+		<script src="js/imask.js"></script>
+		<script src="js/ion.rangeSlider.min.js"></script>
+		<script src="js/nice-select2.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>

@@ -1,0 +1,159 @@
+@media print,
+(max-width: 1439px)
+{
+    /*--------
+        LK
+    --------*/
+    .lk
+    {
+        --content_width: 965px;
+        --sidebar_width: 300px;
+    }
+
+
+
+    .lk aside
+    {
+        padding-block: var(--cont_padding);
+        padding-inline: var(--cont_padding);
+
+        gap: var(--cont_padding);
+    }
+
+
+
+    /*----------------
+        LK - Loans
+    ----------------*/
+    .loans .loan .item
+    {
+        width: 248px;
+    }
+
+
+    .loans .loan .item.payment
+    {
+        width: calc(100% - 536px);
+    }
+
+
+    .loans .loan .payment .btn
+    {
+        padding-inline: var(--block_padding_small) 12px;
+    }
+
+
+
+    /*--------------------
+        LK - Loan info
+    --------------------*/
+    .loan_info .data .item
+    {
+        width: 230px;
+    }
+
+
+    .loan_info .data .item.payment
+    {
+        width: calc(100% - 500px);
+    }
+
+
+    .loan_info .data .item.next_payment
+    {
+        width: calc(100% - 500px);
+        margin-right: 0;
+    }
+
+
+
+    /*------------------------
+        LK - Contacts info
+    ------------------------*/
+    .contacts_info .item .col
+    {
+        width: 204px;
+    }
+
+
+    .contacts_info .item .col + .col
+    {
+        width: calc(100% - 214px);
+    }
+
+
+
+    /*--------------------------
+        LK - Payment history
+    --------------------------*/
+    .payment_history table td
+    {
+        height: 60px;
+    }
+
+
+    .payment_history table td.status
+    {
+        width: 172px;
+    }
+
+
+
+    /*---------------------------
+        LK - Payment schedule
+    ---------------------------*/
+    .payment_schedule .data > *
+    {
+        gap: var(--gap);
+    }
+
+
+    .payment_schedule table td
+    {
+        height: 60px;
+    }
+
+
+
+    /*------------------------
+        LK - Referral stats
+    ------------------------*/
+    .referral_stats .text_block
+    {
+        margin-bottom: var(--block_offset);
+    }
+
+
+    .referral_stats .grid
+    {
+        margin-bottom: calc(var(--cont_padding) * -1);
+        margin-left: calc(var(--cont_padding) * -1);
+    }
+
+
+    .referral_stats .grid > *
+    {
+        width: calc(33.333% - var(--cont_padding));
+        margin-bottom: var(--cont_padding);
+        margin-left: var(--cont_padding);
+    }
+
+
+
+    /*------------------------
+        LK - Profile stats
+    ------------------------*/
+    .profile_stats .grid
+    {
+        margin-bottom: calc(var(--cont_padding) * -1);
+        margin-left: calc(var(--cont_padding) * -1);
+    }
+
+
+    .profile_stats .grid > *
+    {
+        width: calc(33.333% - var(--cont_padding));
+        margin-bottom: var(--cont_padding);
+        margin-left: var(--cont_padding);
+    }
+}

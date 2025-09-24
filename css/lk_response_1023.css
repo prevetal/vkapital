@@ -1,0 +1,254 @@
+@media print,
+(max-width: 1023px)
+{
+    /*----------------
+        LK - Loans
+    ----------------*/
+    .loans .loan .item
+    {
+        width: 180px;
+    }
+
+
+    .loans .loan .item.payment
+    {
+        width: calc(100% - 400px);
+    }
+
+
+    .loans .loan .item .label
+    {
+        margin-bottom: 8px;
+    }
+
+
+    .loans .loan .progress
+    {
+        margin-top: 0;
+    }
+
+
+
+    .loans .loan.closed .item
+    {
+        width: 210px;
+    }
+
+
+    .loans .loan .item.pledge
+    {
+        width: 100%;
+    }
+
+
+    .loans .loan .item .info
+    {
+        min-height: 0;
+    }
+
+
+    .loans .loan.closed .progress
+    {
+        margin-top: 0;
+    }
+
+
+
+    /*-------------------
+        LK - Services
+    -------------------*/
+    .services table td.price
+    {
+        width: 112px;
+    }
+
+
+    .services table td.loan
+    {
+        width: 228px;
+        padding-right: 0;
+    }
+
+
+
+    /*----------------------
+        LK - Autopayment
+    ----------------------*/
+    .autopayment .info
+    {
+        padding: 20px;
+    }
+
+
+    .autopayment .info .card .number
+    {
+        width: 100%;
+    }
+
+
+    .autopayment .info .card .btn
+    {
+        width: 116px;
+    }
+
+
+
+    /*-----------------
+        LK - Stocks
+    -----------------*/
+    .stocks .item
+    {
+        min-height: 270px;
+    }
+
+
+
+    /*----------------
+        LK - Cards
+    ----------------*/
+    .cards .card .info
+    {
+        padding: 20px;
+    }
+
+
+    .cards .card .info .number
+    {
+        width: 100%;
+    }
+
+
+    .cards .card .info .btn
+    {
+        width: 116px;
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .item .col + .col
+    {
+        width: calc(50% - var(--cont_padding_half));
+    }
+
+
+
+    /*--------------------
+        LK - Loan info
+    --------------------*/
+    .loan_info .data .item
+    {
+        width: 210px;
+    }
+
+
+    .loan_info .data .item.payment,
+    .loan_info .data .item.next_payment
+    {
+        width: 100%;
+    }
+
+
+    .loan_info .data .progress
+    {
+        margin-top: 0;
+
+        gap: var(--gap);
+    }
+
+
+
+    /*----------------------
+        LK - Pledge info
+    ----------------------*/
+    .pledge_info .info .image
+    {
+        width: 152px;
+    }
+
+
+    .pledge_info .info .image + *
+    {
+        width: calc(100% - 172px);
+        min-height: 86px;
+    }
+
+
+
+    /*--------------------------
+        LK - Payment history
+    --------------------------*/
+    .payment_history table td.date
+    {
+        width: 88px;
+    }
+
+
+    .payment_history table td.price
+    {
+        width: 100px;
+    }
+
+
+    .payment_history table td.status
+    {
+        width: 148px;
+    }
+
+
+
+    /*-----------------------
+        LK - Payment form
+    -----------------------*/
+    .payment_form .line
+    {
+        width: calc(100% - 160px);
+    }
+
+
+    .payment_form .exp
+    {
+        width: 100%;
+        margin-top: var(--cont_padding_half);
+    }
+
+
+
+    /*-----------------------
+        LK - Pesonal data
+    -----------------------*/
+    .personal_data .data
+    {
+        flex-wrap: wrap;
+    }
+
+
+    .personal_data .info .item
+    {
+        gap: var(--gap_small);
+    }
+
+
+
+    /*-----------------
+        LK - Footer
+    -----------------*/
+    .footer .links
+    {
+        gap: var(--cont_padding);
+    }
+
+
+    .footer .links a
+    {
+        width: 120px;
+    }
+
+
+    .footer .socials
+    {
+        gap: var(--gap_big);
+    }
+}

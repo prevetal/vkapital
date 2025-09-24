@@ -1,0 +1,531 @@
+@media (max-width: 767px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --cont_padding: 20px;
+        --font_size_big: 16px;
+        --font_size_title: 22px;
+        --font_size_title_big: 28px;
+        --block_padding: 20px;
+        --block_padding_big: 32px;
+        --block_head_offset: 24px;
+        --border_radius: 12px;
+        --border_radius_big: 20px;
+        --gap_big: 12px;
+    }
+
+
+
+    /*--------------
+        Fancybox
+    --------------*/
+    .fancybox__content > .f-button.is-close-btn,
+    .is-compact .fancybox__content > .f-button.is-close-btn
+    {
+        top: 21px;
+        right: 28px;
+    }
+
+
+
+    /*---------------
+        Accordion
+    ---------------*/
+    .accordion_item .head .title
+    {
+        line-height: calc(100% + 6px);
+    }
+
+
+    .accordion_item .data
+    {
+        margin-top: 0;
+    }
+
+
+
+    /*-----------------
+        Mob. header
+    -----------------*/
+    .mob_header .logo img
+    {
+        width: 160px;
+        height: 33px;
+    }
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .page_head .back a
+    {
+        padding: 8px 16px 8px 8px;
+
+        font-size: var(--font_size_small);
+
+        gap: var(--gap_small);
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head .swiper-controls
+    {
+        margin-right: 0;
+        margin-left: auto;
+    }
+
+
+    .block_head .all_link
+    {
+        width: 100%;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form .agree
+    {
+        font-size: 11px;
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block .images > *
+    {
+        width: 100%;
+    }
+
+
+    .text_block .cols
+    {
+        gap: var(--cont_padding);
+    }
+
+
+    .text_block .cols .col
+    {
+        width: 100%;
+    }
+
+
+    .text_block .table_wrap
+    {
+        overflow-x: auto;
+        overflow-y: hidden;
+
+        width: 100%;
+    }
+
+
+    .text_block table
+    {
+        width: 776px;
+    }
+
+
+    .text_block table td.fix_w
+    {
+        width: 124px;
+    }
+
+
+
+    /*-----------------
+        Main slider
+    -----------------*/
+    .main_slider .swiper-controls
+    {
+        top: 0;
+        right: 0;
+        bottom: 0;
+
+        width: 100%;
+        margin-block: auto;
+        padding-inline: var(--cont_padding_half);
+    }
+
+
+    .main_slider .info,
+    .main_slider .info.big_w
+    {
+        width: 100%;
+        min-height: 320px;
+    }
+
+
+    .main_slider .items.columns
+    {
+        column-gap: 0;
+        column-count: 1;
+    }
+
+
+    .main_slider .items.columns > * + *
+    {
+        margin-top: var(--gap_small);
+    }
+
+
+    .main_slider .image,
+    .main_slider .img,
+    .main_slider .coins
+    {
+        display: none;
+    }
+
+
+
+    /*------------------
+        Action block
+    ------------------*/
+    .action_block .data
+    {
+        padding: var(--block_padding_big);
+    }
+
+
+    .action_block .data:before
+    {
+        display: none;
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles .grid > *
+    {
+        width: calc(50% - var(--cont_padding));
+    }
+
+
+
+    /*-------------
+        Charity
+    -------------*/
+    .charity .grid > *
+    {
+        width: calc(50% - var(--block_padding));
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .map
+    {
+        height: 320px;
+        margin-top: var(--cont_padding);
+    }
+
+
+
+    .contacts_info .requisites
+    {
+        margin-top: var(--cont_padding);
+    }
+
+
+    .contacts_info .requisites .image
+    {
+        display: none;
+    }
+
+
+    .contacts_info .requisites .text_block
+    {
+        width: 100%;
+    }
+
+
+
+    /*------------------
+        For partners
+    ------------------*/
+    .for_partners .item
+    {
+        min-height: 168px;
+    }
+
+
+    .for_partners .item .icon
+    {
+        height: 80px;
+    }
+
+
+
+    /*-------------
+        Reviews
+    -------------*/
+    .reviews .grid
+    {
+        margin-left: 0;
+    }
+
+
+    .reviews .grid > *
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+
+    /*--------------
+        Services
+    --------------*/
+    .services .grid
+    {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    .services .slider
+    {
+        grid-column: 1 / -1;
+        grid-row: auto;
+    }
+
+
+    .services .slider .swiper
+    {
+        position: relative;
+    }
+
+
+    .services .slider .item .title br
+    {
+        display: none;
+    }
+
+
+
+    /*-----------------
+        Suitable if
+    -----------------*/
+    .suitable_if .item .icon
+    {
+        height: 60px;
+    }
+
+
+
+    /*---------------------
+        Loan conditions
+    ---------------------*/
+    .loan_conditions .grid
+    {
+        grid-template-columns: 1fr;
+    }
+
+
+    .loan_conditions .important
+    {
+        grid-row: auto;
+    }
+
+
+
+    /*------------------
+        Loan objects
+    ------------------*/
+    .loan_objects .grid
+    {
+        margin-left: 0;
+    }
+
+
+    .loan_objects .grid > *
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+
+    /*------------------------
+        Service advantages
+    ------------------------*/
+    .service_advantages .grid
+    {
+        margin-left: 0;
+    }
+
+
+    .service_advantages .grid > *
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+
+    /*-----------------
+        Service for
+    -----------------*/
+    .service_for .image
+    {
+        display: none;
+    }
+
+
+    .service_for .text_block
+    {
+        width: 100%;
+    }
+
+
+
+    /*------------------------
+        Service conditions
+    ------------------------*/
+    .service_conditions .grid
+    {
+        margin-left: 0;
+    }
+
+
+    .service_conditions .grid > *
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+
+    /*----------
+        Calc
+    ----------*/
+    .calc .data
+    {
+        padding-inline: var(--cont_padding);
+
+        gap: 20px;
+    }
+
+
+    .calc .form .select
+    {
+        width: 100%;
+    }
+
+
+    .calc .form .grid
+    {
+        margin-left: 0;
+    }
+
+
+    .calc .form .grid > *,
+    .calc .form .grid > *:last-child
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    .calc .form .range .val
+    {
+        height: 28px;
+    }
+
+
+    .calc .form .bottom
+    {
+        height: 48px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .contacts
+    {
+        order: 2;
+
+        width: 100%;
+        min-width: 100%;
+    }
+
+
+    footer .col
+    {
+        width: 100%;
+        min-width: 100%;
+
+        text-align: left;
+    }
+
+
+    footer .logo img
+    {
+        width: 160px;
+        height: 33px;
+        margin-left: 0;
+    }
+
+
+    footer .branches
+    {
+        align-content: flex-start;
+        align-items: flex-start;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        gap: var(--block_offset);
+    }
+
+
+    footer .branches .branch
+    {
+        width: calc(50% - var(--block_offset) * .5);
+
+        text-align: left;
+    }
+
+
+    footer .menu
+    {
+        width: calc(100% + var(--block_offset));
+        margin-bottom: calc(var(--block_offset) * -1);
+        margin-left: calc(var(--block_offset) * -1);
+    }
+
+
+    footer .menu .item
+    {
+        width: calc(50% - var(--block_offset));
+        margin-bottom: var(--block_offset);
+        margin-left: var(--block_offset);
+    }
+
+
+    footer .texts .grid
+    {
+        margin-left: 0;
+    }
+
+
+    footer .texts .grid > *
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+}

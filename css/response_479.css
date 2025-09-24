@@ -1,0 +1,458 @@
+@media (max-width: 479px)
+{
+    /*----------------
+        Pagination
+    ----------------*/
+    .pagination
+    {
+        gap: var(--gap_small);
+    }
+
+
+    .pagination .prev
+    {
+        padding: 8px 12px 8px 8px;
+    }
+
+
+    .pagination .next
+    {
+        padding: 8px 8px 8px 12px;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head
+    {
+        gap: var(--block_padding_small) var(--cont_padding);
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form .confirm_code
+    {
+        padding-block: var(--cont_padding_half);
+        padding-inline: var(--cont_padding_half);
+    }
+
+
+    .form .confirm_code .input
+    {
+        height: 40px;
+    }
+
+
+    .form .submit
+    {
+        flex-wrap: wrap;
+    }
+
+
+    .form .submit_btn
+    {
+        width: 100%;
+    }
+
+
+    .form .submit .agree
+    {
+        margin-left: 0;
+
+        text-align: center;
+    }
+
+
+
+    /*-----------------
+        Main slider
+    -----------------*/
+    .main_slider .data
+    {
+        padding: var(--cont_padding);
+    }
+
+
+    .main_slider .info,
+    .main_slider .info.big_w
+    {
+        min-height: 340px;
+    }
+
+
+    .main_slider .btn
+    {
+        width: 100%;
+        min-height: 40px;
+        padding: 8px var(--cont_padding);
+
+        font-size: var(--font_size);
+    }
+
+
+
+    /*------------------
+        Action block
+    ------------------*/
+    .action_block .data
+    {
+        padding-inline: var(--cont_padding);
+    }
+
+
+    .action_block .phones .val
+    {
+        gap: var(--gap_small);
+    }
+
+
+    .action_block .phones .val > *
+    {
+        width: 100%;
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles .grid
+    {
+        margin-left: 0;
+    }
+
+
+    .articles .grid > *
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    .articles .article
+    {
+        padding: calc(var(--block_padding) - 1px);
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .item .col
+    {
+        width: 100%;
+    }
+
+
+    .contacts_info .item .col + .col
+    {
+        margin-top: var(--gap);
+    }
+
+
+    .contacts_info .item .work_time
+    {
+        min-height: 0;
+    }
+
+
+
+    .contacts_info .requisites
+    {
+        padding-inline: var(--cont_padding);
+    }
+
+
+
+    /*------------------
+        For partners
+    ------------------*/
+    .for_partners .grid
+    {
+        margin-left: 0;
+    }
+
+
+    .for_partners .grid > *
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    .for_partners .item
+    {
+        min-height: 152px;
+    }
+
+
+
+    /*-----------
+        Login
+    -----------*/
+    .login .data
+    {
+        width: 100%;
+        padding-inline: var(--cont_padding);
+    }
+
+
+
+    /*------------
+        Why we
+    ------------*/
+    .why_we .grid
+    {
+        margin-left: 0;
+    }
+
+
+    .why_we .grid > *
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    .why_we .item.white
+    {
+        min-height: 168px;
+    }
+
+
+
+    /*--------------
+        Services
+    --------------*/
+    .services .grid
+    {
+        grid-template-columns: 1fr;
+    }
+
+
+
+    /*------------
+        Steps
+    ------------*/
+    .steps .grid
+    {
+        margin-left: 0;
+    }
+
+
+    .steps .grid > *
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    .steps .step
+    {
+        min-height: 160px;
+    }
+
+
+
+    /*----------------
+        Advantages
+    ----------------*/
+    .advantages .grid
+    {
+        margin-left: 0;
+    }
+
+
+    .advantages .grid > *
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    .advantages .item
+    {
+        min-height: 180px;
+    }
+
+
+
+    /*-----------------
+        Suitable if
+    -----------------*/
+    .suitable_if .grid
+    {
+        margin-left: 0;
+    }
+
+
+    .suitable_if .grid > *
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+
+    /*--------------------------
+        Following conditions
+    --------------------------*/
+    .following_conditions .grid
+    {
+        margin-left: 0;
+    }
+
+
+    .following_conditions .grid > *
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    .following_conditions .item
+    {
+        min-height: 168px;
+    }
+
+
+
+    /*-----------------------
+        Load requirements
+    -----------------------*/
+    .loan_requirements .grid
+    {
+        margin-left: 0;
+    }
+
+
+    .loan_requirements .grid > *
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    .loan_requirements .item
+    {
+        min-height: 180px;
+    }
+
+
+
+    /*-----------------
+        Service for
+    -----------------*/
+    .service_for .data
+    {
+        padding-inline: var(--cont_padding);
+    }
+
+
+
+    /*---------------
+        Documents
+    ---------------*/
+    .documents .grid
+    {
+        margin-left: 0;
+    }
+
+
+    .documents .grid > *
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    .documents .item
+    {
+        min-height: 0;
+    }
+
+
+
+    /*--------------
+        Benefits
+    --------------*/
+    .benefits .grid
+    {
+        margin-left: 0;
+    }
+
+
+    .benefits .grid > *
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    .benefits .item
+    {
+        min-height: 168px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .branches
+    {
+        gap: var(--block_padding_big);
+    }
+
+
+    footer .branches .branch
+    {
+        width: calc(50% - var(--block_padding_big) * .5);
+    }
+
+
+    footer .menu
+    {
+        width: calc(100% + var(--block_padding_big));
+        margin-bottom: calc(var(--block_padding_big) * -1);
+        margin-left: calc(var(--block_padding_big) * -1);
+    }
+
+
+    footer .menu .item
+    {
+        width: calc(50% - var(--block_padding_big));
+        margin-bottom: var(--block_padding_big);
+        margin-left: var(--block_padding_big);
+    }
+
+
+    footer .texts .grid
+    {
+        margin-bottom: calc(var(--block_padding) * -1);
+    }
+
+
+    footer .texts .text
+    {
+        margin-bottom: var(--block_padding);
+
+        font-size: 10px;
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+    .modal .btns .btn
+    {
+        width: 100%;
+    }
+}

@@ -1,0 +1,907 @@
+@media print,
+(max-width: 1279px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --cont_padding: 24px;
+        --sidebar_width: 260px;
+        --custom_scroll_width: 5px;
+        --custom_scroll_height: 5px;
+        --font_size_small: 12px;
+        --font_size: 14px;
+        --font_size_big: 18px;
+        --font_size_title: 24px;
+        --font_size_title_big: 32px;
+        --block_offset_double: 60px;
+        --block_padding_small: 16px;
+        --block_padding: 24px;
+        --block_padding_big: 40px;
+        --block_head_offset: 24px;
+        --border_radius: 16px;
+        --border_radius_big: 24px;
+        --gap_small: 4px;
+        --gap: 8px;
+        --gap_big: 16px;
+    }
+
+
+    .content_flex .content
+    {
+        width: calc(100% - var(--sidebar_width) - var(--cont_padding));
+    }
+
+
+
+    /*--------------
+        Fancybox
+    --------------*/
+    .fancybox__content > .f-button.is-close-btn,
+    .is-compact .fancybox__content > .f-button.is-close-btn
+    {
+        top: 26px;
+        right: 36px;
+    }
+
+
+
+    /*----------
+        Tabs
+    ----------*/
+    .tabs .btn
+    {
+        padding: 8px 12px;
+    }
+
+
+
+    /*---------------
+        Load more
+    ---------------*/
+    .load_more .btn
+    {
+        height: 40px;
+        padding: 0 var(--cont_padding);
+    }
+
+
+
+    /*---------------
+        Accordion
+    ---------------*/
+    .accordion_item .head .title
+    {
+        width: calc(100% - 32px);
+    }
+
+
+    .accordion_item .data
+    {
+        padding-inline: var(--block_padding_small);
+    }
+
+
+
+    /*----------------
+        Pagination
+    ----------------*/
+    .pagination .prev
+    {
+        padding: 8px 16px 8px 12px;
+
+        gap: var(--gap_small);
+    }
+
+
+    .pagination .next
+    {
+        padding: 8px 12px 8px 16px;
+
+        gap: var(--gap_small);
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form .errors,
+    .form .confirm_code .label,
+    .form .requirements
+    {
+        margin-bottom: var(--cont_padding_half);
+    }
+
+
+    .form .line
+    {
+        margin-bottom: 20px;
+    }
+
+
+    .form .input
+    {
+        height: 44px;
+    }
+
+
+    .form .nice-select > .current,
+    .form .nice-select .multiple-options
+    {
+        height: 44px;
+    }
+
+
+    .form .exp
+    {
+        margin-top: var(--cont_padding_half);
+    }
+
+
+
+    /*-----------------------
+        Load requirements
+    -----------------------*/
+    .loan_requirements .grid
+    {
+        margin-bottom: calc(var(--cont_padding) * -1);
+        margin-left: calc(var(--cont_padding) * -1);
+    }
+
+
+    .loan_requirements .grid > *
+    {
+        width: calc(25% - var(--cont_padding));
+        margin-bottom: var(--cont_padding);
+        margin-left: var(--cont_padding);
+    }
+
+
+    .loan_requirements .item
+    {
+        min-height: 200px;
+    }
+
+
+
+    /*------------------
+        Loan objects
+    ------------------*/
+    .loan_objects .grid
+    {
+        margin-bottom: calc(var(--cont_padding) * -1);
+    }
+
+
+    .loan_objects .grid > *
+    {
+        margin-bottom: var(--cont_padding);
+    }
+
+
+    .loan_objects .item .name
+    {
+        padding-block: var(--cont_padding);
+        padding-inline: var(--cont_padding);
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header .city .current span
+    {
+        min-width: 0;
+    }
+
+
+    header .logo img
+    {
+        width: 180px;
+        height: 37px;
+    }
+
+
+    header .menu
+    {
+        margin-left: var(--block_offset);
+    }
+
+
+    header .order_btn,
+    header .account .btn
+    {
+        height: 40px;
+    }
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .page_head .links a
+    {
+        padding: 8px 12px;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form .line
+    {
+        margin-bottom: var(--gap_big);
+    }
+
+
+    .form .submit_btn
+    {
+        height: 40px;
+        padding-block: 0;
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block .images
+    {
+        gap: var(--cont_padding);
+    }
+
+
+    .text_block .images > *
+    {
+        width: calc(50% - var(--cont_padding_half));
+    }
+
+
+    .text_block .cols .col
+    {
+        width: calc(50% - var(--cont_padding_half));
+    }
+
+
+    .text_block table td.fix_w
+    {
+        width: 110px;
+    }
+
+
+
+    /*-----------------
+        Main slider
+    -----------------*/
+    .main_slider .coins
+    {
+        right: var(--cont_padding_double);
+
+        height: 300px;
+    }
+
+
+    .main_slider .img1
+    {
+        left: 500px;
+
+        width: 324px;
+    }
+
+
+    .main_slider .img2
+    {
+        left: 500px;
+
+        width: 300px;
+    }
+
+
+    .main_slider .info
+    {
+        min-height: 300px;
+    }
+
+
+    .main_slider .info.big_w
+    {
+        width: 500px;
+    }
+
+
+    .main_slider .title.min_height
+    {
+        min-height: 0;
+    }
+
+
+    .main_slider .btn
+    {
+        padding: 10px var(--cont_padding);
+    }
+
+
+    .main_slider .swiper-controls
+    {
+        right: var(--cont_padding_double);
+
+        margin-right: 0;
+    }
+
+
+
+    /*------------------
+        Action block
+    ------------------*/
+    .action_block .data
+    {
+        padding-block: var(--block_padding_big);
+        padding-inline: 128px var(--block_padding_big);
+    }
+
+
+    .action_block .data:before
+    {
+        left: -24px;
+
+        font-size: 248px;
+    }
+
+
+    .action_block .info
+    {
+        width: 388px;
+
+        gap: var(--cont_padding);
+    }
+
+
+    .action_block .phones
+    {
+        gap: var(--gap_small);
+    }
+
+
+    .action_block .form
+    {
+        width: 388px;
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles .grid
+    {
+        margin-bottom: calc(var(--cont_padding) * -1);
+        margin-left: calc(var(--cont_padding) * -1);;
+    }
+
+
+    .articles .grid > *
+    {
+        width: calc(33.333% - var(--cont_padding));
+        margin-bottom: var(--cont_padding);
+        margin-left: var(--cont_padding);
+    }
+
+
+    .articles .article .date
+    {
+        margin-bottom: var(--gap_small);
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .item
+    {
+        width: calc(50% - var(--cont_padding_half));
+    }
+
+
+    .contacts_info .item .col
+    {
+        width: calc(50% - var(--cont_padding_half));
+    }
+
+
+    .contacts_info .item .work_time
+    {
+        min-height: 65px;
+    }
+
+
+
+    .contacts_info .map
+    {
+        height: 400px;
+    }
+
+
+
+    .contacts_info .requisites
+    {
+        padding-block: var(--block_padding_big);
+        padding-inline: var(--block_padding_big);
+    }
+
+
+    .contacts_info .requisites .text_block
+    {
+        width: 400px;
+
+        font-size: var(--font_size);
+    }
+
+
+
+    /*---------------
+        Documents
+    ---------------*/
+    .documents
+    {
+        gap: var(--cont_padding);
+    }
+
+
+    .documents .section
+    {
+        padding: calc(var(--cont_padding) - 1px);
+    }
+
+
+    .documents .link
+    {
+        padding: 8px;
+    }
+
+
+
+    /*---------
+        FAQ
+    ---------*/
+    .FAQ
+    {
+        gap: var(--cont_padding);
+    }
+
+
+    .FAQ .section
+    {
+        padding: calc(var(--cont_padding) - 1px);
+    }
+
+
+
+    /*------------------
+        For partners
+    ------------------*/
+    .for_partners .cont
+    {
+        padding-inline: var(--cont_padding);
+    }
+
+
+    .for_partners .grid
+    {
+        margin-bottom: calc(var(--cont_padding) * -1);
+        margin-left: calc(var(--cont_padding) * -1);
+    }
+
+
+    .for_partners .grid > *
+    {
+        width: calc(25% - var(--cont_padding));
+        margin-bottom: var(--cont_padding);
+        margin-left: var(--cont_padding);
+    }
+
+
+    .for_partners .item.last
+    {
+        gap: var(--gap);
+    }
+
+
+    .for_partners .item .btn
+    {
+        padding: 8px var(--block_padding_small);
+    }
+
+
+
+    /*----------------
+        Loan terms
+    ----------------*/
+    .loan_terms
+    {
+        gap: var(--cont_padding);
+    }
+
+
+    .loan_terms .section
+    {
+        padding: calc(var(--cont_padding) - 1px);
+    }
+
+
+
+    /*-----------
+        Login
+    -----------*/
+    .login .data
+    {
+        width: 480px;
+        padding: var(--block_padding_big);
+    }
+
+
+    .login .forgot_link
+    {
+        margin-top: var(--cont_padding_half);
+
+        text-align: center;
+    }
+
+
+
+    /*-------------
+        Reviews
+    -------------*/
+    .reviews .grid
+    {
+        margin-bottom: calc(var(--cont_padding) * -1);
+        margin-left: calc(var(--cont_padding) * -1);
+    }
+
+
+    .reviews .grid > *
+    {
+        width: calc(50% - var(--cont_padding));
+        margin-bottom: var(--cont_padding);
+        margin-left: var(--cont_padding);
+    }
+
+
+
+    /*--------------
+        Services
+    --------------*/
+    .services .grid
+    {
+        grid-template-columns: 360px 1fr 1fr;
+    }
+
+
+    .services .slider .item .info
+    {
+        padding-bottom: 52px;
+    }
+
+
+
+    /*------------
+        Steps
+    ------------*/
+    .steps
+    {
+        padding-bottom: var(--cont_padding);
+    }
+
+
+    .steps .step
+    {
+        min-height: 196px;
+    }
+
+
+    .steps .step .arrow
+    {
+        top: calc(var(--block_padding_small) + 1px);
+    }
+
+
+    .steps .step .name
+    {
+        margin-top: var(--cont_padding);
+    }
+
+
+
+    /*----------------
+        Advantages
+    ----------------*/
+    .advantages .grid
+    {
+        margin-bottom: calc(var(--cont_padding) * -1);
+        margin-left: calc(var(--cont_padding) * -1);
+    }
+
+
+    .advantages .grid > *
+    {
+        width: calc(25% - var(--cont_padding));
+        margin-bottom: var(--cont_padding);
+        margin-left: var(--cont_padding);
+    }
+
+
+    .advantages .item
+    {
+        min-height: 220px;
+    }
+
+
+
+    /*------------
+        Cases
+    ------------*/
+    .cases .case .credit
+    {
+        padding: 8px 16px;
+    }
+
+
+
+    /*-----------------
+        Suitable if
+    -----------------*/
+    .suitable_if .item .icon
+    {
+        height: 80px;
+    }
+
+
+    .suitable_if .item .name
+    {
+        font-size: var(--font_size);
+    }
+
+
+
+    /*---------------------
+        Loan conditions
+    ---------------------*/
+    .loan_conditions .grid
+    {
+        grid-template-columns: 440px 1fr;
+    }
+
+
+    .loan_conditions .important .info
+    {
+        padding-inline: var(--cont_padding);
+        padding-bottom: var(--cont_padding);
+    }
+
+
+
+    /*--------------------------
+        Following conditions
+    --------------------------*/
+    .following_conditions .grid
+    {
+        margin-bottom: calc(var(--cont_padding) * -1);
+        margin-left: calc(var(--cont_padding) * -1);
+    }
+
+
+    .following_conditions .grid > *
+    {
+        width: calc(25% - var(--cont_padding));
+        margin-bottom: var(--cont_padding);
+        margin-left: var(--cont_padding);
+    }
+
+
+    .following_conditions .item
+    {
+        min-height: 220px;
+    }
+
+
+
+    /*-----------------
+        Service for
+    -----------------*/
+    .service_for .data
+    {
+        padding-block: var(--block_padding_big);
+        padding-inline: var(--block_padding_big);
+    }
+
+
+    .service_for .text_block
+    {
+        width: 520px;
+
+        font-size: var(--font_size);
+    }
+
+
+
+    /*---------------
+        Documents
+    ---------------*/
+    .documents .grid
+    {
+        margin-bottom: calc(var(--cont_padding) * -1);
+        margin-left: calc(var(--cont_padding) * -1);
+    }
+
+
+    .documents .grid > *
+    {
+        width: calc(25% - var(--cont_padding));
+        margin-bottom: var(--cont_padding);
+        margin-left: var(--cont_padding);
+    }
+
+
+    .documents .item
+    {
+        min-height: 220px;
+    }
+
+
+
+    /*------------
+        Why we
+    ------------*/
+    .why_we .item.white
+    {
+        min-height: 220px;
+    }
+
+
+
+    /*--------------
+        Benefits
+    --------------*/
+    .benefits .grid
+    {
+        margin-bottom: calc(var(--cont_padding) * -1);
+        margin-left: calc(var(--cont_padding) * -1);
+    }
+
+
+    .benefits .grid > *
+    {
+        width: calc(25% - var(--cont_padding));
+        margin-bottom: var(--cont_padding);
+        margin-left: var(--cont_padding);
+    }
+
+
+    .benefits .item
+    {
+        min-height: 200px;
+    }
+
+
+
+    /*----------
+        Calc
+    ----------*/
+    .calc .data
+    {
+        padding-inline: var(--block_padding_big);
+
+        gap: var(--gap_big);
+    }
+
+
+    .calc .form .type label span
+    {
+        padding-block: 9px;
+    }
+
+
+    .calc .form .select
+    {
+        width: 280px;
+    }
+
+
+    .calc .form .range .label
+    {
+        font-size: 12px;
+    }
+
+
+    .calc .form .get_schedule_btn
+    {
+        height: 40px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .data .cont
+    {
+        gap: var(--block_padding_big);
+    }
+
+
+    footer .contacts
+    {
+        width: 240px;
+        min-width: 240px;
+
+        gap: var(--cont_padding);
+    }
+
+
+    footer .order_btn
+    {
+        height: 40px;
+    }
+
+
+    footer .col
+    {
+        width: 240px;
+        min-width: 240px;
+    }
+
+
+    footer .menu
+    {
+        gap: var(--block_padding_big);
+    }
+
+
+    footer .menu .item
+    {
+        width: calc(50% - var(--block_padding_big) * .5);
+
+        gap: var(--gap_big);
+    }
+
+
+    footer .logo img
+    {
+        width: 204px;
+        height: 40px;
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+    .modal
+    {
+        padding-block: var(--cont_padding);
+        padding-inline: var(--block_padding_big);
+    }
+
+
+    .modal_desc,
+    .modal .form
+    {
+        margin-top: var(--cont_padding_half);
+    }
+
+
+    .modal .btns
+    {
+        margin-top: var(--cont_padding);
+    }
+
+
+    .modal .btns .btn
+    {
+        height: 40px;
+    }
+}

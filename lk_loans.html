@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+		<!-- Adapting the page for mobile devices -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Prohibition of phone number recognition -->
+		<meta name="format-detection" content="telephone=no">
+		<meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+		<!-- Page title -->
+		<title>Заголовок страницы</title>
+
+		<!-- Meta description -->
+		<meta name="description" content="">
+
+		<!-- Meta Keywords -->
+		<meta name="keywords" content="">
+
+		<!-- Changing the color of the mobile browser panel -->
+		<meta name="msapplication-TileColor" content="#1B16BC">
+		<meta name="theme-color" content="#1B16BC">
+
+		<!-- Connecting fonts from Google -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+		<!-- Connecting style files -->
+		<link rel="stylesheet" href="css/swiper-bundle.min.css">
+		<link rel="stylesheet" href="css/swiper.css">
+		<link rel="stylesheet" href="css/fancybox.css">
+		<link rel="stylesheet" href="css/ion.rangeSlider.css">
+		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="css/lk.css">
+
+		<link rel="stylesheet" href="css/response_1279.css" media="print, (max-width: 1279px)">
+		<link rel="stylesheet" href="css/response_1023.css" media="print, (max-width: 1023px)">
+		<link rel="stylesheet" href="css/response_767.css" media="print, (max-width: 767px)">
+		<link rel="stylesheet" href="css/response_479.css" media="(max-width: 479px)">
+
+		<link rel="stylesheet" href="css/lk_response_1439.css" media="print, (max-width: 1439px)">
+		<link rel="stylesheet" href="css/lk_response_1279.css" media="print, (max-width: 1279px)">
+		<link rel="stylesheet" href="css/lk_response_1023.css" media="print, (max-width: 1023px)">
+		<link rel="stylesheet" href="css/lk_response_767.css" media="print, (max-width: 767px)">
+		<link rel="stylesheet" href="css/lk_response_479.css" media="(max-width: 479px)">
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="main">
+				<section class="lk">
+					<aside>
+						<button class="mob_close_btn"></button>
+
+						<a href="/" class="logo">
+							<img src="images/logo.svg" alt="">
+						</a>
+
+						<div class="menu">
+							<div>
+								<a href="/" class="link">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_home"></use></svg>
+									<span>Рабочий стол</span>
+								</a>
+							</div>
+
+							<div>
+								<a class="link active">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_percents"></use></svg>
+									<span>Мои займы</span>
+								</a>
+
+								<div class="sub">
+									<div>№ 123456 – 150 000 ₽</div>
+									<div>№ 654321 – 100 000 ₽</div>
+								</div>
+							</div>
+
+							<div>
+								<a href="/" class="link">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_document"></use></svg>
+									<span>Заявки на займ</span>
+								</a>
+
+								<div class="sub">
+									<div>№ 00001 – 500 000 ₽</div>
+								</div>
+							</div>
+
+							<div>
+								<a href="/" class="link">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_user"></use></svg>
+									<span>Профиль</span>
+								</a>
+							</div>
+
+							<div>
+								<a href="/" class="link">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_cards"></use></svg>
+									<span>Карты и автоплатежи</span>
+								</a>
+							</div>
+
+							<div>
+								<a href="/" class="link">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_users"></use></svg>
+									<span>Пригласить друга</span>
+								</a>
+							</div>
+
+							<div>
+								<a href="/" class="link">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_phone"></use></svg>
+									<span>Контакты</span>
+								</a>
+							</div>
+						</div>
+					</aside>
+
+
+					<section class="content">
+						<section class="header">
+							<div class="cont row">
+								<button class="mob_menu_btn">
+									<span></span>
+								</button>
+
+								<div class="nitifications modal_cont">
+									<button class="btn mini_modal_btn" data-modal-id="#nitifications_mini_modal">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_notification"></use></svg>
+
+										<span>Уведомления</span>
+
+										<span class="count">5</span>
+									</button>
+
+									<div class="mini_modal" id="nitifications_mini_modal">
+										<div class="list">
+											<div class="item warning">
+												<div class="head">
+													<div class="title">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_notice"></use></svg>
+														<span>Напоминаем!</span>
+													</div>
+												</div>
+
+												<div class="desc">Приближается срок оплаты займа №123456. Внесите <span>5 560 руб</span> до <span>06.06.2025</span></div>
+											</div>
+
+											<div class="item danger">
+												<div class="head">
+													<div class="title">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_notice"></use></svg>
+														<span>Внимание!</span>
+													</div>
+												</div>
+
+												<div class="desc">По займу №123456 зафиксирована просрочка платежа. Просим как можно скорее внести сумму <span>5 560 руб</span>.</div>
+											</div>
+
+											<div class="item success">
+												<div class="head">
+													<div class="title">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_success"></use></svg>
+														<span>Поздравляем!</span>
+													</div>
+												</div>
+
+												<div class="desc">Ваш займ №123456 успешно закрыт.<br> Спасибо за доверие — рады быть вам полезны!</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+								<div class="account modal_cont">
+									<button class="btn mini_modal_btn" data-modal-id="#account_mini_modal">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_user"></use></svg>
+
+										<span>Профиль</span>
+
+										<svg class="arr"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+									</button>
+
+									<div class="mini_modal" id="account_mini_modal">
+										<div class="links">
+											<div><a href="/">Редактировать</a></div>
+
+											<div><a href="/">Выйти</a></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+
+
+						<section class="loans block tabs_container">
+							<div class="cont">
+								<div class="block_head">
+									<div class="title">Мои займы</div>
+								</div>
+
+								<div class="tabs">
+									<button data-content="#my_loans_tab1" data-level="level1" class="btn active">Открытые</button>
+
+									<button data-content="#my_loans_tab2" data-level="level1" class="btn">Закрытые</button>
+								</div>
+
+								<div class="tab_content level1 active" id="my_loans_tab1">
+									<div class="list">
+										<div class="loan">
+											<div class="item sum">
+												<div class="label">Общая сумма займа</div>
+
+												<div class="info">
+													<div class="val">150 000 ₽</div>
+
+													<div class="autopayment_status">Автоплатёж <span>включён</span></div>
+												</div>
+											</div>
+
+											<div class="item next_payment">
+												<div class="label">Следующий платеж</div>
+
+												<div class="info">
+													<div class="val">01.06.2025</div>
+
+													<div class="days">Через 25 дней</div>
+												</div>
+											</div>
+
+											<div class="item payment">
+												<div class="label">Платеж 2.95% в месяц</div>
+
+												<div class="info">
+													<div class="price">1 475 ₽</div>
+
+													<button class="btn">
+														<span>Оплатить</span>
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+													</button>
+												</div>
+											</div>
+
+											<div class="progress">
+												<div class="bar">
+													<div style="width: 60%;"></div>
+												</div>
+
+												<div class="paid">Выплачено 10 000 / 150 000 ₽</div>
+
+												<div class="number">№123456 от 01.03.2025</div>
+											</div>
+										</div>
+
+										<div class="loan">
+											<div class="item sum">
+												<div class="label">Общая сумма займа</div>
+
+												<div class="info">
+													<div class="val">150 000 ₽</div>
+
+													<div class="autopayment_status">Автоплатёж <span>включён</span></div>
+												</div>
+											</div>
+
+											<div class="item next_payment">
+												<div class="label">Следующий платеж</div>
+
+												<div class="info">
+													<div class="val">01.06.2025</div>
+
+													<div class="days">Через 25 дней</div>
+												</div>
+											</div>
+
+											<div class="item payment">
+												<div class="label">Платеж 2.95% в месяц</div>
+
+												<div class="info">
+													<div class="price">10 000 ₽</div>
+
+													<button class="btn">
+														<span>Оплатить</span>
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+													</button>
+												</div>
+											</div>
+
+											<div class="progress">
+												<div class="bar">
+													<div style="width: 15%;"></div>
+												</div>
+
+												<div class="paid">Выплачено 10 000 / 150 000 ₽</div>
+
+												<div class="number">№123456 от 01.03.2025</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="tab_content level1" id="my_loans_tab2">
+									<div class="list">
+										<div class="loan closed">
+											<div class="item sum">
+												<div class="label">Общая сумма займа</div>
+
+												<div class="info">
+													<div class="val">150 000 ₽</div>
+												</div>
+											</div>
+
+											<div class="item closing_date">
+												<div class="label">Дата закрытия</div>
+
+												<div class="info">
+													<div class="val">26.04.2025</div>
+												</div>
+											</div>
+
+											<div class="item type">
+												<div class="label">Тип займа</div>
+
+												<div class="info">
+													<div class="val">Под ПТС</div>
+												</div>
+											</div>
+
+											<div class="item pledge">
+												<div class="label">Предмет залога</div>
+
+												<div class="info">
+													<div class="val">ФОЛЬКСВАГЕН ПАССАТ</div>
+
+													<div class="register_number">A123BC456</div>
+												</div>
+											</div>
+
+											<div class="progress">
+												<div class="number">№123456 от 01.03.2025</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+
+
+						<section class="footer">
+							<div class="cont row">
+								<div class="links">
+									<div><a href="/">Пользовательское соглашение</a></div>
+
+									<div><a href="/">Соглашение об электронном взаимодействии</a></div>
+
+									<div><a href="/">Политика безопасности платежей</a></div>
+
+									<div><a href="/">Документы и свидетельства</a></div>
+								</div>
+
+								<div class="socials">
+									<a href="/" target="_blank" rel="noopener nofollow">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_vk"></use></svg>
+									</a>
+
+									<a href="/" target="_blank" rel="noopener nofollow">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_whatsapp"></use></svg>
+									</a>
+
+									<a href="/" target="_blank" rel="noopener nofollow">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_youtube"></use></svg>
+									</a>
+
+									<a href="/" target="_blank" rel="noopener nofollow">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_tg"></use></svg>
+									</a>
+								</div>
+							</div>
+						</section>
+					</section>
+				</section>
+			</div>
+
+			<div class="overlay"></div>
+		</div>
+
+
+		<!-- Connecting javascript files -->
+		<script src="js/jquery-3.7.1.min.js"></script>
+		<script src="js/functions.js"></script>
+		<script src="js/swiper-bundle.min.js"></script>
+		<script src="js/fancybox.js"></script>
+		<script src="js/imask.js"></script>
+		<script src="js/ion.rangeSlider.min.js"></script>
+		<script src="js/nice-select2.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>

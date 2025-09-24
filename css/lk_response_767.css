@@ -1,0 +1,479 @@
+@media print,
+(max-width: 767px)
+{
+    /*-----------------
+        LK - Header
+    -----------------*/
+    .lk .header .nitifications .mini_modal
+    {
+        width: 335px;
+    }
+
+
+
+    /*----------------
+        LK - Loans
+    ----------------*/
+    .loans .loan .item,
+    .loans .loan.closed .item
+    {
+        width: calc(50% - var(--cont_padding_half));
+    }
+
+
+    .loans .loan .item.payment
+    {
+        width: 100%;
+    }
+
+
+
+    /*-------------------
+        LK - Services
+    -------------------*/
+    .services table
+    {
+        display: block;
+    }
+
+
+    .services table thead
+    {
+        display: none;
+    }
+
+
+    .services table tbody
+    {
+        display: flex;
+        flex-direction: column;
+
+        gap: var(--cont_padding);
+    }
+
+
+    .services table tr
+    {
+        display: flex;
+        align-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+
+        padding: 20px;
+
+        border-radius: var(--border_radius);
+        background: var(--white_color);
+        box-shadow: 0 2px 10px 0 rgba(27, 22, 188, .20);
+
+        gap: var(--gap_big);
+    }
+
+
+    .services table td,
+    .services table td + td,
+    .services table td.price
+    {
+        display: flex;
+        flex-direction: column;
+
+        width: calc(50% - var(--cont_padding_half));
+        padding: 0;
+
+        border: none;
+    }
+
+
+    .services table td.loan
+    {
+        width: 100%;
+    }
+
+
+    .services table td:before
+    {
+        display: block;
+
+        margin-bottom: var(--gap_small);
+
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 140%;
+
+        content: attr(data-label);
+
+        color: var(--text_grey);
+    }
+
+
+    .services table td .btn
+    {
+        width: calc(50% - var(--cont_padding_half));
+    }
+
+
+
+    /*-----------------------
+        LK - Bottom block
+    -----------------------*/
+    .bottom_block .cont
+    {
+        gap: var(--block_offset);
+    }
+
+
+
+    /*----------------------
+        LK - Autopayment
+    ----------------------*/
+    .bottom_block .autopayment
+    {
+        width: 100%;
+    }
+
+
+    .autopayment .info
+    {
+        min-height: 0;
+    }
+
+
+    .autopayment .info .card
+    {
+        padding-top: 0;
+    }
+
+
+    .autopayment .info .card .number
+    {
+        width: calc(100% - 143px);
+        padding-block: 7px;
+    }
+
+
+    .autopayment .info .card .btn
+    {
+        width: 135px;
+    }
+
+
+
+    /*-----------------
+        LK - Stocks
+    -----------------*/
+    .bottom_block .stocks
+    {
+        width: 100%;
+    }
+
+
+    .stocks .item
+    {
+        min-height: 0;
+    }
+
+
+
+    /*----------------
+        LK - Cards
+    ----------------*/
+    .cards .grid
+    {
+        margin-left: 0;
+    }
+
+
+    .cards .grid > *
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    .cards .card .info .number
+    {
+        width: calc(100% - 143px);
+        padding-block: 7px;
+    }
+
+
+    .cards .card .info .btn
+    {
+        width: 135px;
+    }
+
+
+
+    /*--------------------
+        LK - Loan info
+    --------------------*/
+    .loan_info .data .item
+    {
+        width: calc(50% - var(--cont_padding_half));
+    }
+
+
+
+    /*----------------------
+        LK - Pledge info
+    ----------------------*/
+    .pledge_info .info
+    {
+        width: 100%;
+    }
+
+
+    .pledge_info .features
+    {
+        display: flex;
+        align-content: flex-start;
+        align-items: flex-start;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        width: 100%;
+        margin-top: var(--cont_padding_half);
+
+        gap: var(--cont_padding);
+    }
+
+
+    .pledge_info .features > *
+    {
+        width: calc(50% - var(--cont_padding_half));
+    }
+
+
+
+    /*--------------------------
+        LK - Payment history
+    --------------------------*/
+    .payment_history .table_wrap
+    {
+        overflow-x: auto;
+        overflow-y: hidden;
+
+        width: 100%;
+    }
+
+
+    .payment_history table
+    {
+        width: 800px;
+    }
+
+
+
+    /*---------------------------
+        LK - Payment schedule
+    ---------------------------*/
+    .payment_schedule .data
+    {
+        justify-content: space-between;
+    }
+
+
+    .payment_schedule .data > *
+    {
+        width: auto;
+    }
+
+
+    .payment_schedule .table_wrap
+    {
+        overflow-x: auto;
+        overflow-y: hidden;
+
+        width: 100%;
+    }
+
+
+    .payment_schedule table
+    {
+        width: 640px;
+    }
+
+
+    .payment_schedule .text_block
+    {
+        margin-top: var(--cont_padding);
+    }
+
+
+
+    /*----------------------
+        LK - Loan online
+    ----------------------*/
+    .loan_online .first_section
+    {
+        margin-bottom: var(--block_offset);
+    }
+
+
+    .loan_online .steps .grid > *
+    {
+        width: calc(50% - var(--cont_padding));
+    }
+
+
+
+    /*-----------------------
+        LK - Payment form
+    -----------------------*/
+    .payment_form .line
+    {
+        width: 100%;
+        margin-bottom: var(--cont_padding_half);
+    }
+
+
+    .payment_form .exp
+    {
+        width: calc(100% - 152px);
+        margin-top: 0;
+
+        gap: var(--gap_small);
+    }
+
+
+
+    /*------------------------
+        LK - Referral stats
+    ------------------------*/
+    .referral_stats .grid > *
+    {
+        width: calc(50% - var(--cont_padding));
+    }
+
+
+    .referral_stats .item .btn
+    {
+        width: 100%;
+        padding-inline: 12px;
+
+        gap: var(--gap_small);
+    }
+
+
+
+    /*------------------------
+        LK - Profile stats
+    ------------------------*/
+    .profile_stats .grid > *
+    {
+        width: calc(50% - var(--cont_padding));
+    }
+
+
+    .profile_stats .item
+    {
+        min-height: 140px;
+    }
+
+
+    .profile_stats .item .icon
+    {
+        top: 16px;
+    }
+
+
+
+    /*-----------------------
+        LK - Pesonal data
+    -----------------------*/
+    .personal_data .field
+    {
+        width: calc(100% - 178px);
+    }
+
+
+    .personal_data .edit_btn,
+    .personal_data .save_btn
+    {
+        width: 168px;
+    }
+
+
+
+    /*-----------------
+        LK - Footer
+    -----------------*/
+    .footer .links > *
+    {
+        width: calc(50% - var(--cont_padding_half));
+    }
+
+
+    .footer .links a
+    {
+        width: auto;
+    }
+
+
+    .footer .socials
+    {
+        width: 100%;
+        margin-top: var(--cont_padding);
+    }
+
+
+
+    /*-------------------------------------
+        PopUp - Enable autopayment info
+    -------------------------------------*/
+    #enable_autopayment_info_modal .step
+    {
+        margin-top: 20px;
+
+        gap: var(--gap);
+    }
+
+
+    #enable_autopayment_info_modal .step .desc
+    {
+        width: calc(100% - 200px);
+    }
+
+
+    #enable_autopayment_info_modal .step .example
+    {
+        width: 188px;
+    }
+
+
+
+    /*--------------------------------
+        PopUp - Enable autopayment
+    --------------------------------*/
+    #enable_autopayment_modal .data .grid
+    {
+        margin-bottom: calc(var(--cont_padding) * -1);
+        margin-left: calc(var(--cont_padding) * -1);
+    }
+
+
+    #enable_autopayment_modal .data .grid > *
+    {
+        width: calc(50% - var(--cont_padding));
+        margin-bottom: var(--cont_padding);
+        margin-left: var(--cont_padding);
+
+        gap: var(--gap_small);
+    }
+
+
+    #enable_autopayment_modal .info .grid
+    {
+        margin-bottom: calc(var(--cont_padding) * -1);
+        margin-left: 0;
+    }
+
+
+    #enable_autopayment_modal .info .grid > *
+    {
+        width: 100%;
+        margin-bottom: var(--cont_padding);
+        margin-left: 0;
+    }
+}
