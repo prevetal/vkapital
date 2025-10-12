@@ -74,8 +74,9 @@
 								</a>
 
 								<div class="sub">
-									<div>№ 123456 – 150 000 ₽</div>
-									<div>№ 654321 – 100 000 ₽</div>
+									<div><a href="/">№ 123456 – 150 000 ₽</a></div>
+
+									<div><a href="/">№ 654321 – 100 000 ₽</a></div>
 								</div>
 							</div>
 
@@ -86,7 +87,7 @@
 								</a>
 
 								<div class="sub">
-									<div>№ 00001 – 500 000 ₽</div>
+									<div><a href="/">№ 00001 – 500 000 ₽</a></div>
 								</div>
 							</div>
 
@@ -204,29 +205,29 @@
 								</div>
 
 								<div class="grid row">
-									<div class="item">
+									<a href="/" class="item">
 										<svg class="icon"><use xlink:href="images/sprite.svg#ic_success"></use></svg>
 
 										<div class="val">2</div>
 
 										<div class="name">Открытых займов</div>
-									</div>
+									</a>
 
-									<div class="item closed">
+									<a href="/" class="item closed">
 										<svg class="icon"><use xlink:href="images/sprite.svg#ic_success"></use></svg>
 
 										<div class="val">1</div>
 
 										<div class="name">Закрытых займов</div>
-									</div>
+									</a>
 
-									<div class="item expired">
+									<a href="/" class="item expired">
 										<svg class="icon"><use xlink:href="images/sprite.svg#ic_notice"></use></svg>
 
 										<div class="val">1</div>
 
 										<div class="name">Просроченных займов</div>
-									</div>
+									</a>
 								</div>
 							</div>
 						</section>
@@ -328,7 +329,7 @@
 										<p>У вас нет активных автоплатежей.<br> Подключите карту для удобной оплаты прямо сейчас.</p>
 									</div>
 
-									<button class="enabled_btn modal_btn" data-modal="enable_autopayment_info_modal">Подключить</button>
+									<a href="/" class="enabled_link">Подключить</a>
 								</div>
 
 								<div class="stocks">
@@ -533,48 +534,6 @@
 			</div>
 
 			<div class="modal_desc">После перехода по ссылке из письма, статус нового адреса электронной почты обновится в вашем личном кабинете.</div>
-
-			<div class="btns">
-				<button class="btn accent_btn close_btn">Понятно</button>
-			</div>
-		</section>
-
-
-		<section class="modal" id="enable_autopayment_info_modal">
-			<div class="modal_title">Включить автоплатеж</div>
-
-			<div class="step">
-				<div class="name">Шаг 1 - добавьте банковскую карту для оплаты</div>
-
-				<div class="info">
-					<div class="desc">Заполните форму со всеми необходимыми данными.</div>
-
-					<div class="example">
-						<button class="btn">Добавить карту</button>
-					</div>
-				</div>
-			</div>
-
-			<div class="step">
-				<div class="name">Шаг 2 - включите автоплатеж</div>
-
-				<div class="info">
-					<div class="desc">Сдвиньте переключатель статуса вправо, чтобы включить автоплатеж.</div>
-
-					<div class="example">
-						<div class="label">Статус автопродления</div>
-
-						<div class="status">
-							<span>Выключён</span>
-
-							<label class="toggle">
-								<input type="checkbox" name="autopayment">
-								<span></span>
-							</label>
-						</div>
-					</div>
-				</div>
-			</div>
 
 			<div class="btns">
 				<button class="btn accent_btn close_btn">Понятно</button>

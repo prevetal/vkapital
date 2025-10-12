@@ -74,8 +74,9 @@
 								</a>
 
 								<div class="sub">
-									<div>№ 123456 – 150 000 ₽</div>
-									<div>№ 654321 – 100 000 ₽</div>
+									<div><a href="/">№ 123456 – 150 000 ₽</a></div>
+
+									<div><a href="/">№ 654321 – 100 000 ₽</a></div>
 								</div>
 							</div>
 
@@ -86,7 +87,7 @@
 								</a>
 
 								<div class="sub">
-									<div>№ 00001 – 500 000 ₽</div>
+									<div><a href="/">№ 00001 – 500 000 ₽</a></div>
 								</div>
 							</div>
 
@@ -552,6 +553,41 @@
 
 				<button class="btn accent_btn">Удалить</button>
 			</div>
+		</section>
+
+
+		<section class="modal" id="new_password_modal">
+			<div class="modal_title">Новый пароль</div>
+
+			<div class="modal_desc">Для входа в личный кабинет</div>
+
+			<form action="" class="form">
+				<div class="line">
+					<div class="field">
+						<input type="password" name="" value="" class="input pad_r" placeholder="Новый пароль">
+
+						<!-- <input type="password" name="" value="" class="input pad_r filled" placeholder="Новый пароль"> -->
+
+						<!-- <input type="password" name="" value="" class="input pad_r error" placeholder="Новый пароль"> -->
+
+						<button class="toggle_type_btn">
+							<svg><use xlink:href="images/sprite.svg#ic_eye_close"></use></svg>
+							<svg><use xlink:href="images/sprite.svg#ic_eye"></use></svg>
+						</button>
+					</div>
+
+					<div class="requirements">
+						<div>Минимум 8 символов</div>
+						<!-- <div class="error">Минимум 8 символов</div> -->
+						<div>Содежит цифры</div>
+						<div>Содержит заглавную букву и строчную букву (a-z, A-Z)</div>
+					</div>
+				</div>
+
+				<div class="submit">
+					<button class="submit_btn accent_btn">Продолжить</button>
+				</div>
+			</form>
 		</section>
 
 

@@ -20,6 +20,17 @@ document.addEventListener('DOMContentLoaded', function() {
 			navigation: {
 				nextEl: '.swiper-button-next',
 				prevEl: '.swiper-button-prev'
+			},
+			on: {
+				resize: swiper => {
+					setTimeout(() => {
+						let items = swiper.el.querySelectorAll('.data')
+
+						items.forEach(el => el.style.height = 'auto')
+
+						setHeight(items)
+					})
+				}
 			}
 		})
 	}
@@ -177,15 +188,14 @@ document.addEventListener('DOMContentLoaded', function() {
 				}
 			},
 			on: {
-				init: swiper => {
-					setHeight(swiper.el.querySelectorAll('.item'))
-				},
 				resize: swiper => {
-					let items = swiper.el.querySelectorAll('.item')
+					setTimeout(() => {
+						let items = swiper.el.querySelectorAll('.item')
 
-					items.forEach(el => el.style.height = 'auto')
+						items.forEach(el => el.style.height = 'auto')
 
-					setHeight(items)
+						setHeight(items)
+					})
 				}
 			}
 		}
@@ -375,6 +385,32 @@ document.addEventListener('DOMContentLoaded', function() {
 	}
 
 
+	// Card date mask
+	const cardDateInputs = document.querySelectorAll('.card_date_input')
+
+	if (cardDateInputs) {
+		cardDateInputs.forEach(el => {
+			IMask(el, {
+				mask: '00 {/} 00',
+				lazy: true
+			})
+		})
+	}
+
+
+	// Card CVV mask
+	const cardCVVInputs = document.querySelectorAll('.card_CVV_input')
+
+	if (cardCVVInputs) {
+		cardCVVInputs.forEach(el => {
+			IMask(el, {
+				mask: '000',
+				lazy: true
+			})
+		})
+	}
+
+
 	// Custom select - Nice select
 	const selects = document.querySelectorAll('select:not(.skip)'),
 		selectsInstances = []
@@ -425,7 +461,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 	// Turn off autopayment
-	$('.autopayment .status .toggle').click(function(e) {
+	$('.autopayment .status .toggle, .cards .card .info .toggle').click(function(e) {
 		const _self = $(this)
 
 		setTimeout(() => {
@@ -508,24 +544,40 @@ document.addEventListener('DOMContentLoaded', function() {
 	})
 
 
-	$('.login .form').submit(function(e) {
-		e.preventDefault()
-
-		Fancybox.close()
-
+	if ($('#new_password_modal').length) {
 		Fancybox.show([{
-			src: '#confirm_code_modal',
+			src: '#new_password_modal',
 			type: 'inline'
 		}])
-	})
+	}
+
+
+	if ($('#enable_autopayment_info_modal').length) {
+		Fancybox.show([{
+			src: '#enable_autopayment_info_modal',
+			type: 'inline'
+		}])
+	}
 
 
 	// Calc
+	$('.calc .type input[name=type]').change(function () {
+		const val = $(this).val()
+
+		val != 3
+			? $('.calc .form .select').show()
+			: $('.calc .form .select').hide()
+
+		$('.calc .form .bottom.rate .val').hide()
+		$('.calc .form .bottom.rate .val.type_' + val).show()
+	})
+
+
 	sumRange = $('#sum_range').ionRangeSlider({
 		min: 10000,
 		max: 500000,
 		from: 100000,
-		step: 100,
+		step: 500,
 		postfix: ' ₽',
 		onChange: data => {
 			$('.sum_range .val').text(data.from.toLocaleString() + ' ₽')
@@ -534,6 +586,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			$('.sum_range .val').text(data.from.toLocaleString() + ' ₽')
 		}
 	}).data('ionRangeSlider')
+
 
 	monthRange = $('#month_range').ionRangeSlider({
 		min: 3,
@@ -548,6 +601,28 @@ document.addEventListener('DOMContentLoaded', function() {
 			$('.month_range .val').text(data.from.toLocaleString() + ' мес')
 		}
 	}).data('ionRangeSlider')
+
+
+
+	// Payment form
+	$('.payment_form .input').keyup(function() {
+		const _self = $(this)
+
+		setTimeout(() => {
+			_self.val().length
+				? $('.payment_form .exp').addClass('show')
+				: $('.payment_form .exp').removeClass('show')
+		})
+	})
+
+	$('.payment_form .tips .btn').click(function(e) {
+		e.preventDefault()
+
+		const value = $(this).data('value')
+
+		$('.payment_form .input').val(value)
+		$('.payment_form .exp').addClass('show')
+	})
 })
 
 

@@ -504,6 +504,14 @@ button
     width: 12px;
     height: 8px;
     margin-left: auto;
+
+    transition: transform .2s linear;
+}
+
+
+.accordion_item.active .head .icon
+{
+    transform: rotate(180deg);
 }
 
 
@@ -1554,6 +1562,12 @@ aside .links a.active
 .bg_block .block_head .all_link a
 {
     color: currentColor;
+}
+
+
+.bg_block .block_head .all_link a:hover
+{
+    color: #a09dff;
 }
 
 
@@ -2742,8 +2756,6 @@ aside .links a.active
 
 .why_we .item .name
 {
-    margin-top: auto;
-
     font-weight: 700;
     line-height: 160%;
 }
@@ -2885,6 +2897,9 @@ aside .links a.active
 
     padding: var(--block_padding_small);
 
+    text-decoration: none;
+
+    color: currentColor;
     color: var(--text_color);
     border-radius: var(--border_radius);
     background: var(--white_color);
@@ -3206,6 +3221,12 @@ aside .links a.active
     line-height: 20px;
 
     white-space: nowrap;
+}
+
+
+.calc .form .bottom.rate .val
+{
+    display: none;
 }
 
 
@@ -4964,6 +4985,9 @@ aside .links a.active
 
     padding: calc(var(--block_padding_small) - 1px);
 
+    text-decoration: none;
+
+    color: currentColor;
     border: 1px solid var(--grey_color);
     border-radius: var(--border_radius);
     background: var(--white_color);
@@ -5562,7 +5586,7 @@ aside .links a.active
 }
 
 
-.login .forgot_link
+.login .forgot_btn
 {
     font-weight: 500;
     line-height: 160%;
@@ -5571,16 +5595,13 @@ aside .links a.active
 }
 
 
-.login .forgot_link a
+.login .forgot_btn .btn
 {
     transition: color .2s linear;
-    text-decoration: none;
-
-    color: currentColor;
 }
 
 
-.login .forgot_link a:hover
+.login .forgot_btn .btn:hover
 {
     color: var(--accent_color_h);
 }
@@ -5650,9 +5671,18 @@ footer .order_btn
     font-weight: 500;
     line-height: 160%;
 
+    transition: .2s linear;
+
     color: var(--grey_color);
     border: 1px solid var(--text_grey);
     border-radius: var(--border_radius_small);
+}
+
+
+footer .order_btn:hover
+{
+    color: var(--white_color);
+    border-color: var(--white_color);
 }
 
 
@@ -5981,8 +6011,16 @@ footer .copyright
     font-weight: 500;
     line-height: 160%;
 
+    transition: .2s linear;
+
     border-radius: var(--border_radius_small);
     background: var(--accent_color_soft);
+}
+
+
+.modal .btns .btn:hover
+{
+    color: rgb(var(--accent_color));
 }
 
 
@@ -5991,6 +6029,13 @@ footer .copyright
     color: var(--white_color);
     background: rgb(var(--accent_color));
     box-shadow: 0 2px 10px 0 rgba(27, 22, 188, .20);
+}
+
+
+.modal .btns .accent_btn:hover
+{
+    color: var(--white_color);
+    background: rgb(var(--accent_color) / .5);
 }
 
 

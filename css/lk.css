@@ -182,6 +182,31 @@
 }
 
 
+.lk aside .menu .sub a
+{
+    display: inline-block;
+
+    transition: color .2s linear;
+    vertical-align: top;
+    text-decoration: none;
+
+    color: currentColor;
+}
+
+
+
+.lk aside .menu .sub a:hover
+{
+    color: rgb(var(--accent_color));
+}
+
+
+.lk aside .menu .sub a.active
+{
+    color: rgb(var(--accent_color) / .5);
+}
+
+
 
 .lk .content
 {
@@ -205,6 +230,7 @@
 
     width: fit-content;
 
+    transition: color .2s linear;
     text-decoration: none;
 
     color: currentColor;
@@ -221,6 +247,12 @@
     height: 16px;
 
     transform: rotate(-180deg);
+}
+
+
+.lk .back a:hover
+{
+    color: var(--accent_color_h);
 }
 
 
@@ -680,6 +712,7 @@
     font-weight: 500;
     line-height: calc(100% + 10px);
 
+    transition: background .2s linear;
     vertical-align: top;
     text-decoration: none;
 
@@ -687,6 +720,12 @@
     border-radius: var(--border_radius_small);
     background: var(--red_color);
     box-shadow: 0 2px 10px 0 rgba(223, 57, 56, .20);
+}
+
+
+.lk .first_section .btn:hover
+{
+    background: var(--red_color_h);
 }
 
 
@@ -875,6 +914,7 @@
     font-weight: 500;
     line-height: 160%;
 
+    transition: background .2s linear;
     text-decoration: none;
 
     color: var(--white_color);
@@ -894,6 +934,12 @@
     height: 20px;
 
     transform: rotate(180deg);
+}
+
+
+.loans .loan .payment .btn:hover
+{
+    background: var(--red_color_h);
 }
 
 
@@ -1088,6 +1134,7 @@
     font-weight: 500;
     line-height: 160%;
 
+    transition: background .2s linear;
     text-decoration: none;
 
     color: var(--white_color);
@@ -1107,6 +1154,12 @@
     height: 20px;
 
     transform: rotate(180deg);
+}
+
+
+.services table td .btn:hover
+{
+    background: var(--red_color_h);
 }
 
 
@@ -1130,8 +1183,15 @@
 }
 
 
-.autopayment .enabled_btn
+.autopayment .enabled_link
 {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: fit-content;
     height: 46px;
     margin-top: var(--gap_big);
     padding: 0 var(--block_padding_small);
@@ -1139,10 +1199,20 @@
     font-weight: 500;
     line-height: 160%;
 
+    transition: background .2s linear;
+    text-align: center;
+    text-decoration: none;
+
     color: var(--white_color);
     border-radius: var(--border_radius_small);
     background: rgb(var(--accent_color));
     box-shadow: 0 2px 10px 0 rgba(27, 22, 188, .20);
+}
+
+
+.autopayment .enabled_link:hover
+{
+    background: rgb(var(--accent_color) / .5);
 }
 
 
@@ -1347,6 +1417,8 @@
     font-weight: 500;
     line-height: 160%;
 
+    transition: background .2s linear;
+
     color: var(--white_color);
     border-radius: var(--border_radius_small);
     background: rgb(var(--accent_color));
@@ -1360,6 +1432,12 @@
 
     width: 16px;
     height: 16px;
+}
+
+
+.autopayment .info .card .btn:hover
+{
+    background: rgb(var(--accent_color) / .5);
 }
 
 
@@ -1420,6 +1498,7 @@
     font-weight: 500;
     line-height: 160%;
 
+    transition: background .2s linear;
     vertical-align: top;
     text-decoration: none;
 
@@ -1427,6 +1506,12 @@
     border-radius: var(--border_radius_small);
     background: rgb(var(--accent_color));
     box-shadow: 0 2px 10px 0 rgba(27, 22, 188, .20);
+}
+
+
+.stocks .item .link a:hover
+{
+    background: rgb(var(--accent_color) / .5);
 }
 
 
@@ -1440,13 +1525,15 @@
     align-content: flex-start;
     align-items: flex-start;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
 
     padding: var(--block_padding_small);
 
     border-radius: var(--border_radius);
     background: var(--white_color);
     box-shadow: 0 2px 10px 0 rgba(27, 22, 188, .20);
+
+    gap: 15px;
 }
 
 
@@ -1529,7 +1616,7 @@
 
 .payment_form .exp
 {
-    display: flex;
+    display: none;
     flex-direction: column;
 
     width: calc(100% - 625px);
@@ -1540,6 +1627,12 @@
     line-height: 140%;
 
     gap: var(--gap);
+}
+
+
+.payment_form .exp.show
+{
+    display: flex;
 }
 
 
@@ -1696,12 +1789,16 @@
 
 .loan_info .data .item .autopayment_notice
 {
+    display: block;
+
     width: fit-content;
     padding: 5px 10px;
 
     font-size: 12px;
     font-weight: 500;
     line-height: 140%;
+
+    text-decoration: none;
 
     color: var(--white_color);
     border-radius: 6px;
@@ -1768,6 +1865,7 @@
     font-weight: 500;
     line-height: 160%;
 
+    transition: background .2s linear;
     text-decoration: none;
 
     color: var(--white_color);
@@ -1787,6 +1885,12 @@
     height: 20px;
 
     transform: rotate(180deg);
+}
+
+
+.loan_info .data .payment .btn:hover
+{
+    background: var(--red_color_h);
 }
 
 
@@ -2272,6 +2376,9 @@
     min-height: 150px;
     padding: calc(var(--block_padding_small) - 1px);
 
+    text-decoration: none;
+
+    color: currentColor;
     border: 1px solid var(--grey_color);
     border-radius: var(--border_radius);
     background: var(--white_color);
@@ -2555,6 +2662,8 @@
     padding-block: 10px;
     padding-inline: var(--block_padding_small);
 
+    transition: background .2s linear;
+
     color: var(--white_color);
     border-radius: var(--border_radius_small);
     background: rgb(var(--accent_color));
@@ -2579,6 +2688,12 @@
 }
 
 
+.personal_data .edit_btn:hover
+{
+    background: rgb(var(--accent_color) / .5);
+}
+
+
 .personal_data .save_btn
 {
     display: none;
@@ -2592,6 +2707,8 @@
     height: 46px;
     padding-block: 10px;
     padding-inline: var(--block_padding_small);
+
+    transition: background .2s linear;
 
     color: var(--white_color);
     border-radius: var(--border_radius_small);
@@ -2614,6 +2731,12 @@
 
     width: 16px;
     height: 16px;
+}
+
+
+.personal_data .save_btn:hover
+{
+    background: var(--red_color_h);
 }
 
 
@@ -2672,6 +2795,8 @@
     font-weight: 500;
     line-height: 160%;
 
+    transition: background .2s linear;
+
     color: var(--white_color);
     border-radius: var(--border_radius_small);
     background: rgb(var(--accent_color));
@@ -2690,6 +2815,12 @@
 }
 
 
+.personal_data .upload .btn:hover
+{
+    background: rgb(var(--accent_color) / .5);
+}
+
+
 
 /*----------------
     LK - Cards
@@ -2704,12 +2835,20 @@
     font-weight: 500;
     line-height: 160%;
 
+    transition: background .2s linear;
+
     color: var(--white_color);
     border-radius: var(--border_radius_small);
     background: rgb(var(--accent_color));
     box-shadow: 0 2px 10px 0 rgba(27, 22, 188, .20);
 
     gap: 8px;
+}
+
+
+.cards .add_btn:hover
+{
+    background: rgb(var(--accent_color) / .5);
 }
 
 
@@ -2808,6 +2947,12 @@
     display: block;
 
     cursor: pointer;
+}
+
+
+.cards .card .info .toggle > *
+{
+    pointer-events: none;
 }
 
 
@@ -2928,6 +3073,8 @@
     font-weight: 500;
     line-height: 160%;
 
+    transition: background .2s linear;
+
     color: var(--white_color);
     border-radius: var(--border_radius_small);
     background: rgb(var(--accent_color));
@@ -2941,6 +3088,12 @@
 
     width: 16px;
     height: 16px;
+}
+
+
+.cards .card .info .btn:hover
+{
+    background: rgb(var(--accent_color) / .5);
 }
 
 
@@ -3166,9 +3319,17 @@
     width: 128px;
     max-width: 100%;
 
+    transition: color .2s linear;
     text-decoration: none;
 
     color: var(--text_grey);
+}
+
+
+.footer .links a:hover,
+.footer .links a.active
+{
+    color: rgb(var(--accent_color));
 }
 
 
@@ -3189,6 +3350,7 @@
 {
     display: inline-block;
 
+    transition: color .2s linear;
     text-decoration: none;
 
     color: rgb(var(--accent_color));
@@ -3203,6 +3365,12 @@
 
     width: 24px;
     height: 24px;
+}
+
+
+.footer .socials a:hover
+{
+    color: #a09dff;
 }
 
 
@@ -3319,6 +3487,8 @@
     max-width: 100%;
     padding: var(--block_padding_small);
 
+    pointer-events: none;
+
     border-radius: var(--border_radius_small);
     background: var(--accent_color_soft);
 }
@@ -3376,8 +3546,6 @@
 #enable_autopayment_info_modal .step .example .toggle
 {
     display: block;
-
-    pointer-events: none;
 }
 
 

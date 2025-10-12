@@ -74,8 +74,9 @@
 								</a>
 
 								<div class="sub">
-									<div>№ 123456 – 150 000 ₽</div>
-									<div>№ 654321 – 100 000 ₽</div>
+									<div><a href="/">№ 123456 – 150 000 ₽</a></div>
+
+									<div><a href="/">№ 654321 – 100 000 ₽</a></div>
 								</div>
 							</div>
 
@@ -86,7 +87,7 @@
 								</a>
 
 								<div class="sub">
-									<div>№ 00001 – 500 000 ₽</div>
+									<div><a href="/">№ 00001 – 500 000 ₽</a></div>
 								</div>
 							</div>
 
@@ -341,13 +342,13 @@
 
 				<div class="line">
 					<div class="field">
-						<input type="text" name="" value="" class="input" placeholder="мм / гг">
+						<input type="text" inputmode="numeric" name="" value="" class="input card_date_input" placeholder="мм / гг">
 					</div>
 				</div>
 
 				<div class="line">
 					<div class="field">
-						<input type="number" inputmode="numeric" maxlength="3" name="" value="" class="input" placeholder="CVV">
+						<input type="text" inputmode="numeric" name="" value="" class="input card_CVV_input" placeholder="CVV">
 					</div>
 
 					<div class="exp">Трёхзначный код на обороте карты</div>
@@ -362,6 +363,19 @@
 		</section>
 
 
+		<section class="modal" id="disable_autopaymeny_confirm_modal">
+			<div class="modal_title">Хотите отключить автоплатеж? </div>
+
+			<div class="modal_desc">Вам придется вносить платежи вручную<br> За 2 дня до платежа вам придет СМС уведомление.</div>
+
+			<div class="btns">
+				<button class="btn close_btn">Отменить</button>
+
+				<button class="btn accent_btn">Отключить</button>
+			</div>
+		</section>
+
+
 		<section class="modal" id="remove_card_modal">
 			<div class="modal_title">Хотите удалить карту?</div>
 
@@ -371,6 +385,48 @@
 				<button class="btn close_btn">Отменить</button>
 
 				<button class="btn accent_btn">Удалить</button>
+			</div>
+		</section>
+
+
+		<section class="modal" id="enable_autopayment_info_modal">
+			<div class="modal_title">Включить автоплатеж</div>
+
+			<div class="step">
+				<div class="name">Шаг 1 - добавьте банковскую карту для оплаты</div>
+
+				<div class="info">
+					<div class="desc">Заполните форму со всеми необходимыми данными.</div>
+
+					<div class="example">
+						<button class="btn">Добавить карту</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="step">
+				<div class="name">Шаг 2 - включите автоплатеж</div>
+
+				<div class="info">
+					<div class="desc">Сдвиньте переключатель статуса вправо, чтобы включить автоплатеж.</div>
+
+					<div class="example">
+						<div class="label">Статус автопродления</div>
+
+						<div class="status">
+							<span>Выключён</span>
+
+							<label class="toggle">
+								<input type="checkbox" name="autopayment">
+								<span></span>
+							</label>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="btns">
+				<button class="btn accent_btn close_btn">Понятно</button>
 			</div>
 		</section>
 
