@@ -640,6 +640,27 @@ document.addEventListener('DOMContentLoaded', function() {
 	})
 
 
+	monthRange2 = $('#month_range2').ionRangeSlider({
+		min: 3,
+		max: 60,
+		from: 30,
+		step: 1,
+		postfix: ' мес',
+		onChange: data => {
+			$('.month_range2 .input').val(data.from.toLocaleString() + ' мес')
+		},
+		onUpdate: data => {
+			$('.month_range2 .input').val(data.from.toLocaleString() + ' мес')
+		}
+	}).data('ionRangeSlider')
+
+	$('.month_range2 .input').keyup(function () {
+		monthRange2.update({
+			from: parseInt($('.month_range2 .input').val().replace(/[^\d]/g, ""), 10),
+		})
+	})
+
+
 	// Payment form
 	$('.payment_form .input').keyup(function() {
 		const _self = $(this)

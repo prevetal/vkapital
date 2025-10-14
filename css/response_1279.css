@@ -811,7 +811,8 @@
     }
 
 
-    .calc .form .range .label
+    .calc .form .range .label,
+    .calc .form .columns .label
     {
         font-size: 12px;
     }
@@ -820,6 +821,20 @@
     .calc .form .get_schedule_btn
     {
         height: 40px;
+    }
+
+
+    .calc .form .submit.small
+    {
+        width: 294px;
+    }
+
+
+    .calc .form .submit.small .submit_btn
+    {
+        height: 48px;
+
+        font-size: var(--font_size);
     }
 
 

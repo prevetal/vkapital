@@ -310,127 +310,55 @@
 					<section class="calc">
 						<div class="cont">
 							<div class="data">
-								<div class="title">Рассчитайте свой займ за 10 секунд</div>
+								<div class="title">Предварительный расчет стоимости недвижимости</div>
 
 								<div class="desc">
-									<p>Выберите сумму, срок и узнайте предварительный размер платежа.<br> Мы перезвоним и подскажем, как получить деньги уже сегодня.</p>
+									<p>Укажите марку и модель авто, год выпуска, пробег и опишите состояние.<br> Мы перезвоним и подскажем, как получить деньги уже сегодня.</p>
 								</div>
 
 								<form action="" class="form">
-									<div class="head">
-										<div class="type">
-											<label>
-												<input type="radio" name="type" value="1" checked>
-												<span>Под залог Авто</span>
-											</label>
-
-											<label>
-												<input type="radio" name="type" value="2">
-												<span>Под залог ПТС</span>
-											</label>
-
-											<label>
-												<input type="radio" name="type" value="3">
-												<span>Под залог Недвижимости</span>
-											</label>
-										</div>
-
-										<div class="select">
-											<select name="" data-placeholder="Выбор типа ТС">
-												<option value="1">Вариант 1</option>
-												<option value="2">Вариант 2</option>
-												<option value="3">Вариант 3</option>
-											</select>
-
-											<svg class="arr"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
-										</div>
-									</div>
-
 									<div class="fields">
-										<div class="grid">
-											<div class="col sum">
-												<div class="range sum_range">
-													<div class="label">желаемая сумма</div>
+										<div class="columns">
+											<div class="line">
+												<div class="label">рыночная стоимость жилья</div>
 
-													<input type="text" value="100 000 ₽" class="input" name="">
-
-													<input type="hidden" id="sum_range" name="sum_range" value="">
-												</div>
-
-												<div class="bottom">
-													<div class="label">ежемесячный платёж</div>
-
-													<div class="val">2 950 ₽</div>
+												<div class="field">
+													<input type="text" name="" value="" class="input" placeholder="1 000 000 ₽">
 												</div>
 											</div>
 
-											<div class="col sum">
-												<div class="range month_range">
-													<div class="label">срок займа</div>
+											<div class="line">
+												<div class="label">расчет (предварительно)</div>
 
-													<input type="text" value="30 мес" class="input" name="">
-
-													<input type="hidden" id="month_range" name="month_range" value="">
-												</div>
-
-												<div class="bottom rate">
-													<div class="label">ставка</div>
-
-													<div class="val type_1" style="display: block;">2.95 %</div>
-													<div class="val type_2">3.45 %</div>
-													<div class="val type_3">5 %</div>
+												<div class="field">
+													<input type="text" name="" value="" class="input" placeholder="800 000 ₽">
 												</div>
 											</div>
 
-											<div class="col">
-												<div class="line modal_cont payment">
-													<button class="btn mini_modal_btn" data-modal-id="#payment_modal">
-														<span>Платёж процентами</span>
+											<div class="line">
+												<div class="label">ваше имя</div>
 
-														<svg class="arr"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
-													</button>
-
-													<div class="mini_modal" id="payment_modal">
-														<div>
-															<button type="button" class="btn selected" data-name="Платёж процентами">
-																<span class="name">
-																	<span>Платёж процентами</span>
-
-																	<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
-																</span>
-
-																<span class="desc">Ежемесячно погашайте только процент, а основную сумму в любое другое удобное время до окончания срока договора</span>
-															</button>
-														</div>
-
-														<div>
-															<button type="button" class="btn" data-name="Равные платежи">
-																<span class="name">
-																	<span>Равные платежи</span>
-
-																	<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
-																</span>
-
-																<span class="desc">Равные ежемесячные платежи. Такой вид оплаты возможен только при сроке договора на 12 и 24 месяца.</span>
-															</button>
-														</div>
-													</div>
-												</div>
-
-												<button class="get_schedule_btn">
-													<svg class="icon"><use xlink:href="images/sprite.svg#ic_schedule"></use></svg>
-													<span>Построить график платежей</span>
-												</button>
-
-												<div class="submit">
-													<button type="submit" class="submit_btn">Получить деньги</button>
+												<div class="field">
+													<input type="text" name="" value="" class="input" placeholder="Сергей">
 												</div>
 											</div>
+
+											<div class="line">
+												<div class="label">телефон</div>
+
+												<div class="field">
+													<input type="tel" name="" value="" class="input" placeholder="+7 (123) 456-78-90">
+												</div>
+											</div>
+										</div>
+
+										<div class="submit small">
+											<button type="submit" class="submit_btn">Оставить заявку</button>
 										</div>
 									</div>
 								</form>
 
-								<div class="exp">* условия выдачи займа могут отличаться исходя из анализа документов и состояния вашего автомобиля</div>
+								<div class="exp">Нажимая на кнопку Вы соглашаетесь с условиями политики конфиденциальности и даете согласие на обработку персональных данных.</div>
 							</div>
 						</div>
 					</section>
@@ -573,7 +501,7 @@
 						<div class="text_block">
 							<div class="cols">
 								<div class="col">
-									<h2>Компания «Ваш Капитал» предлагает вам срочный выкуп квартир в Новосибирске на самых выгодных условиях!</h2>
+									<h2>Компания «Ваш Капитал» предлагает вам срочный выкуп квартир в Новосибирске на самых выгодных условиях!</h2>
 								</div>
 
 								<div class="col">

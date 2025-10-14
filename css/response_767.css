@@ -439,7 +439,20 @@
     }
 
 
-    .calc .form .range .input
+    .calc .form .columns > *
+    {
+        width: calc(100% - var(--form_columns_offset));
+    }
+
+
+    .calc .form .columns .line
+    {
+        margin-bottom: 12px;
+    }
+
+
+    .calc .form .range .input,
+    .calc .form .columns .input
     {
         height: 28px;
     }
@@ -448,6 +461,12 @@
     .calc .form .bottom
     {
         height: 48px;
+    }
+
+
+    .calc .form .submit.small
+    {
+        width: 100%;
     }
 
 
