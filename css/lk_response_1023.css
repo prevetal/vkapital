@@ -199,6 +199,28 @@
 
 
 
+    /*----------------------------
+        LK - Operation history
+    ----------------------------*/
+    .operation_history table td.date
+    {
+        width: 88px;
+    }
+
+
+    .operation_history table td.price
+    {
+        width: 100px;
+    }
+
+
+    .operation_history table td.status
+    {
+        width: 148px;
+    }
+
+
+
     /*-----------------------
         LK - Payment form
     -----------------------*/
@@ -228,6 +250,16 @@
     .personal_data .info .item
     {
         gap: var(--gap_small);
+    }
+
+
+
+    /*------------------------
+        LK - Referral stats
+    ------------------------*/
+    .referral_stats .item .tooltip .exp
+    {
+        width: 224px;
     }
 
 

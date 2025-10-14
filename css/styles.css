@@ -1059,6 +1059,12 @@ header .menu
 }
 
 
+header .menu_item
+{
+    position: relative;
+}
+
+
 header .menu_item > a
 {
     display: block;
@@ -1077,6 +1083,98 @@ header .menu_item:hover > a,
 header .menu_item > a.active
 {
     color: rgb(var(--accent_color));
+}
+
+
+header .sub_menu
+{
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    visibility: hidden;
+
+    min-width: 100%;
+    margin-top: 8px;
+    padding: 7px;
+
+    z-index: 9;
+    transition: .2s linear;
+    pointer-events: none;
+
+    opacity: 0;
+    border: 1px solid var(--grey_color);
+    border-radius: var(--border_radius_small);
+    background: var(--white_color);
+    box-shadow: 0 2px 10px 0 rgba(27, 22, 188, .20);
+}
+
+
+header .sub_menu:before
+{
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 8px;
+
+    content: '';
+}
+
+
+header .menu_item:hover > a.touch_link + .sub_menu
+{
+    visibility: hidden;
+
+    pointer-events: none;
+
+    opacity: 0;
+}
+
+
+header .menu_item:hover .sub_menu,
+header .menu_item > a.touch_link + .sub_menu.show
+{
+    visibility: visible;
+
+    pointer-events: auto;
+
+    opacity: 1;
+}
+
+
+header .sub_menu a
+{
+    display: block;
+
+    padding: 8px var(--cont_padding_half);
+
+    font-size: var(--font_size_small);
+    font-weight: 500;
+    line-height: 160%;
+
+    transition: .2s linear;
+    white-space: nowrap;
+    text-decoration: none;
+
+    color: currentColor;
+    border-radius: 6px;
+}
+
+
+header .sub_menu a:hover
+{
+    background: var(--accent_color_soft);
+}
+
+
+header .sub_menu a.active
+{
+    color: rgb(var(--accent_color));
+    background: none;
 }
 
 
@@ -2990,7 +3088,6 @@ aside .links a.active
     position: relative;
 
     display: flex;
-    overflow: hidden;
     flex-direction: column;
 
     padding-block: var(--block_padding_big) var(--block_padding);
@@ -3005,7 +3102,7 @@ aside .links a.active
 }
 
 
-.calc .title
+.calc .data > .title
 {
     font-size: var(--font_size_title);
     font-weight: 500;
@@ -3013,7 +3110,7 @@ aside .links a.active
 }
 
 
-.calc .desc
+.calc .data > .desc
 {
     font-size: var(--font_size_small);
     line-height: calc(100% + 6px);
@@ -3176,13 +3273,16 @@ aside .links a.active
 }
 
 
-.calc .form .range .val
+.calc .form .range .input
 {
     height: 32px;
+    padding: 0;
 
     font-size: var(--font_size_big);
     font-weight: 600;
-    line-height: 1;
+
+    border: none;
+    border-radius: 0;
 }
 
 
@@ -3227,6 +3327,157 @@ aside .links a.active
 .calc .form .bottom.rate .val
 {
     display: none;
+}
+
+
+.calc .form .payment .mini_modal_btn
+{
+    position: relative;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    width: 100%;
+    height: 46px;
+    padding-inline: 15px 36px;
+
+    cursor: pointer;
+    text-align: left;
+
+    border: 1px solid var(--form_border_color);
+    border-radius: var(--form_border_radius);
+    background: var(--form_bg_color);
+}
+
+
+.calc .form .payment .mini_modal_btn span
+{
+    overflow: hidden;
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
+.calc .form .payment .mini_modal_btn .arr
+{
+    position: absolute;
+    top: 0;
+    right: 16px;
+    bottom: 0;
+
+    display: block;
+
+    width: 12px;
+    height: 12px;
+    margin-block: auto;
+
+    z-index: 3;
+    transition: transform .2s linear;
+    pointer-events: none;
+}
+
+
+.calc .form .payment .mini_modal_btn.active .arr
+{
+    transform: rotate(180deg);
+}
+
+
+.calc .form .payment .mini_modal
+{
+    margin-top: 5px;
+    padding: 7px;
+
+    border: 1px solid var(--form_border_color);
+    border-radius: var(--form_border_radius);
+    background: var(--form_bg_color);
+    box-shadow: 0 2px 10px 0 rgba(27, 22, 188, .20);
+}
+
+
+.calc .form .payment .mini_modal .btn
+{
+    width: 100%;
+
+    transition: background .2s linear;
+    text-align: left;
+
+    border-radius: 6px;
+}
+
+
+.calc .form .payment .mini_modal .name
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    padding: 8px var(--cont_padding_half);
+
+    line-height: 160%;
+
+    transition: color .2s linear;
+}
+
+
+.calc .form .payment .mini_modal .name span
+{
+    width: calc(100% - 28px);
+}
+
+
+.calc .form .payment .mini_modal .icon
+{
+    display: block;
+
+    width: 16px;
+    height: 16px;
+
+    transition: opacity .2s linear;
+
+    opacity: 0;
+}
+
+
+.calc .form .payment .mini_modal .desc
+{
+    display: block;
+
+    padding: 8px var(--cont_padding_half);
+
+    font-size: var(--font_size_small);
+    font-weight: 500;
+    line-height: 160%;
+}
+
+
+.calc .form .payment .mini_modal .btn:hover
+{
+    background: var(--accent_color_soft);
+}
+
+
+.calc .form .payment .mini_modal .btn.selected
+{
+    background: none;
+}
+
+
+.calc .form .payment .mini_modal .btn.selected .name
+{
+    color: rgb(var(--accent_color));
+}
+
+
+.calc .form .payment .mini_modal .btn.selected .icon
+{
+    opacity: 1;
 }
 
 
@@ -6036,6 +6287,28 @@ footer .copyright
 {
     color: var(--white_color);
     background: rgb(var(--accent_color) / .5);
+}
+
+
+.modal .btns .accent_btn:disabled
+{
+    pointer-events: none;
+
+    color: var(--white_color);
+    background: rgb(var(--accent_color) / .5);
+}
+
+
+.modal .btns .timer
+{
+    font-size: var(--font_size_small);
+    line-height: 160%;
+}
+
+
+.modal .btns .timer b
+{
+    font-weight: 600;
 }
 
 

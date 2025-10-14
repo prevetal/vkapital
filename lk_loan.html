@@ -74,9 +74,14 @@
 								</a>
 
 								<div class="sub">
-									<div><a href="/">№ 123456 – 150 000 ₽</a></div>
+									<div><a href="/" class="danger">
+										<span>№ 123456 – 150 000 ₽</span>
+										<span class="status red">Просрочен</span>
+									</a></div>
 
-									<div><a href="/">№ 654321 – 100 000 ₽</a></div>
+									<div><a href="/">
+										<span>№ 654321 – 100 000 ₽</span>
+									</a></div>
 								</div>
 							</div>
 
@@ -87,7 +92,24 @@
 								</a>
 
 								<div class="sub">
-									<div><a href="/">№ 00001 – 500 000 ₽</a></div>
+									<div><a href="/">
+										<span>№ 00001 – 500 000 ₽</span>
+										<span class="status green">Новая</span>
+									</a></div>
+
+									<div><a href="/">
+										<span>№ 00001 – 500 000 ₽</span>
+										<span class="status blue">В работе</span>
+									</a></div>
+
+									<div><a href="/">
+										<span>№ 00001 – 500 000 ₽</span>
+										<span class="status red">Отказано</span>
+									</a></div>
+
+									<div><a href="/">
+										<span>№ 00001 – 500 000 ₽</span>
+									</a></div>
 								</div>
 							</div>
 
@@ -210,6 +232,14 @@
 
 						<section class="loan_info block">
 							<div class="cont">
+								<div class="overdue">
+									<span>Просрочка!</span>
+
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_question"></use></svg>
+
+									<div class="exp">По займу №123456 зафиксирована просрочка платежа. Просим как можно скорее внести сумму <span>1 475 руб.</span></div>
+								</div>
+
 								<div class="block_head small_m">
 									<div class="title">Займ № 123456 от 01.03.2025</div>
 								</div>
@@ -589,6 +619,7 @@
 		<script src="js/imask.js"></script>
 		<script src="js/ion.rangeSlider.min.js"></script>
 		<script src="js/nice-select2.js"></script>
+		<script src="js/countdown.min.js"></script>
 		<script src="js/scripts.js"></script>
 	</body>
 </html>

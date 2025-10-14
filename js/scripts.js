@@ -236,7 +236,15 @@ document.addEventListener('DOMContentLoaded', function() {
 		Fancybox.show([{
 			src: document.getElementById(e.target.getAttribute('data-modal')),
 			type: 'inline'
-		}])
+		}], {
+			on: {
+				ready: () => {
+					if (e.target.getAttribute('data-modal') === 'confirm_code_modal') {
+						startSMSTimer()
+					}
+				},
+			},
+		})
 	})
 
 
@@ -573,6 +581,23 @@ document.addEventListener('DOMContentLoaded', function() {
 	})
 
 
+	$('.calc .form .payment .mini_modal .btn').click(function (e) {
+		e.preventDefault()
+
+		const name = $(this).data('name'),
+			payment = $(this).closest('.payment')
+
+		payment.find('.mini_modal .btn').removeClass('selected')
+		$(this).addClass('selected')
+
+		payment.find('.mini_modal_btn span').text(name)
+
+		$('.mini_modal, .mini_modal_btn').removeClass('active')
+
+		if (is_touch_device()) $('body').css('cursor', 'default')
+	})
+
+
 	sumRange = $('#sum_range').ionRangeSlider({
 		min: 10000,
 		max: 500000,
@@ -580,12 +605,18 @@ document.addEventListener('DOMContentLoaded', function() {
 		step: 500,
 		postfix: ' ₽',
 		onChange: data => {
-			$('.sum_range .val').text(data.from.toLocaleString() + ' ₽')
+			$('.sum_range .input').val(data.from.toLocaleString() + ' ₽')
 		},
 		onUpdate: data => {
-			$('.sum_range .val').text(data.from.toLocaleString() + ' ₽')
+			$('.sum_range .input').val(data.from.toLocaleString() + ' ₽')
 		}
 	}).data('ionRangeSlider')
+
+	$('.sum_range .input').keyup(function () {
+		sumRange.update({
+			from: parseInt($('.sum_range .input').val().replace(/[^\d]/g, ""), 10),
+		})
+	})
 
 
 	monthRange = $('#month_range').ionRangeSlider({
@@ -595,13 +626,18 @@ document.addEventListener('DOMContentLoaded', function() {
 		step: 1,
 		postfix: ' мес',
 		onChange: data => {
-			$('.month_range .val').text(data.from.toLocaleString() + ' мес')
+			$('.month_range .input').val(data.from.toLocaleString() + ' мес')
 		},
 		onUpdate: data => {
-			$('.month_range .val').text(data.from.toLocaleString() + ' мес')
+			$('.month_range .input').val(data.from.toLocaleString() + ' мес')
 		}
 	}).data('ionRangeSlider')
 
+	$('.month_range .input').keyup(function () {
+		monthRange.update({
+			from: parseInt($('.month_range .input').val().replace(/[^\d]/g, ""), 10),
+		})
+	})
 
 
 	// Payment form
@@ -622,6 +658,27 @@ document.addEventListener('DOMContentLoaded', function() {
 
 		$('.payment_form .input').val(value)
 		$('.payment_form .exp').addClass('show')
+	})
+
+
+	// Login
+	$('.modal .btns .timer').each(function () {
+		const now = new Date(),
+			timerDate = new Date(now.getTime() + 30 * 1000)
+
+		$(this).countdown(timerDate, function (event) {
+			$(this).find('.span').text(event.strftime('%S'))
+		})
+	})
+
+
+	$('#confirm_code_modal .repeat_btn').click(function (e) {
+		e.preventDefault()
+
+		$('#confirm_code_modal .repeat_btn').attr('disabled', true)
+		$('#confirm_code_modal .timer').fadeIn(200)
+
+		startSMSTimer()
 	})
 })
 
@@ -655,3 +712,20 @@ window.addEventListener('resize', function () {
 		}
 	}
 })
+
+
+
+// Timer
+function startSMSTimer() {
+	const now = new Date(),
+		timerDate = new Date(now.getTime() + 30 * 1000)
+
+	$('#confirm_code_modal .timer').countdown(timerDate)
+		.on('update.countdown', e => {
+			$('#confirm_code_modal .timer span').text(e.strftime('%S'))
+		})
+		.on('finish.countdown', () => {
+			$('#confirm_code_modal .timer').hide()
+			$('#confirm_code_modal .repeat_btn').attr('disabled', false)
+		})
+}

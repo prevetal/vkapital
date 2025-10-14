@@ -265,6 +265,25 @@
 
 
 
+    /*----------------------------
+        LK - Operation history
+    ----------------------------*/
+    .operation_history .table_wrap
+    {
+        overflow-x: auto;
+        overflow-y: hidden;
+
+        width: 100%;
+    }
+
+
+    .operation_history table
+    {
+        width: 800px;
+    }
+
+
+
     /*---------------------------
         LK - Payment schedule
     ---------------------------*/
@@ -344,6 +363,14 @@
     .referral_stats .grid > *
     {
         width: calc(50% - var(--cont_padding));
+    }
+
+
+    .referral_stats .item .tooltip .exp
+    {
+        width: 208px;
+
+        line-height: 140%;
     }
 
 

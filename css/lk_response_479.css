@@ -252,25 +252,6 @@
 
 
 
-    /*--------------------------
-        LK - Payment history
-    --------------------------*/
-    .payment_history .table_wrap
-    {
-        overflow-x: auto;
-        overflow-y: hidden;
-
-        width: 100%;
-    }
-
-
-    .payment_history table
-    {
-        width: 800px;
-    }
-
-
-
     /*---------------------------
         LK - Payment schedule
     ---------------------------*/

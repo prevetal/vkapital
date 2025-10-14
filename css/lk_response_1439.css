@@ -99,6 +99,22 @@
 
 
 
+    /*----------------------------
+        LK - Operation history
+    ----------------------------*/
+    .operation_history table td
+        {
+            height: 60px;
+        }
+
+
+    .operation_history table td.status
+    {
+        width: 172px;
+    }
+
+
+
     /*---------------------------
         LK - Payment schedule
     ---------------------------*/

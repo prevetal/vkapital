@@ -185,6 +185,48 @@
     }
 
 
+    header .menu_item
+    {
+        width: 100%;
+    }
+
+
+    header .sub_menu,
+    header .menu_item:hover .sub_menu
+    {
+        position: relative;
+        top: 0;
+
+        display: none;
+
+        width: 100%;
+        margin: 8px 0 0;
+
+        pointer-events: auto;
+
+        opacity: 1;
+    }
+
+
+    header .menu_item > a.touch_link + .sub_menu.show
+    {
+        display: block;
+        visibility: visible;
+    }
+
+
+    header .sub_menu a
+    {
+        white-space: normal;
+    }
+
+
+    header .sub_menu:before
+    {
+        font: none;
+    }
+
+
 
     header .order_btn
     {

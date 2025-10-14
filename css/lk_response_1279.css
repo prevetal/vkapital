@@ -94,6 +94,13 @@
     }
 
 
+    .loans .loan .payment .overdue .exp
+    {
+        width: 280px;
+        padding: 15px 19px;
+    }
+
+
     .loans .loan .payment .btn
     {
         height: 40px;
@@ -262,6 +269,13 @@
     /*--------------------
         LK - Loan info
     --------------------*/
+    .loan_info .overdue .exp
+    {
+        width: 280px;
+        padding: 15px 19px;
+    }
+
+
     .loan_info .data .item
     {
         width: 260px;
@@ -313,6 +327,16 @@
 
 
 
+    /*----------------------------
+        LK - Operation history
+    ----------------------------*/
+    .operation_history .load_more
+    {
+        margin-top: var(--cont_padding);
+    }
+
+
+
     /*-----------------------
         LK - Payment form
     -----------------------*/
@@ -344,9 +368,16 @@
     /*------------------------
         LK - Referral stats
     ------------------------*/
-    .referral_stats .item .icon
+    .referral_stats .item .tooltip
     {
         top: 17px;
+    }
+
+
+    .referral_stats .item .tooltip .exp
+    {
+        width: 308px;
+        padding: 15px 19px;
     }
 
 
