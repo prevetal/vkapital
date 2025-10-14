@@ -608,7 +608,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			$('.sum_range .input').val(data.from.toLocaleString() + ' ₽')
 		},
 		onUpdate: data => {
-			$('.sum_range .input').val(data.from.toLocaleString() + ' ₽')
+			setTimeout(() => $('.sum_range .input').val(data.from.toLocaleString() + ' ₽'))
 		}
 	}).data('ionRangeSlider')
 
@@ -629,7 +629,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			$('.month_range .input').val(data.from.toLocaleString() + ' мес')
 		},
 		onUpdate: data => {
-			$('.month_range .input').val(data.from.toLocaleString() + ' мес')
+			setTimeout(() => $('.month_range .input').val(data.from.toLocaleString() + ' мес'))
 		}
 	}).data('ionRangeSlider')
 
@@ -650,7 +650,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			$('.month_range2 .input').val(data.from.toLocaleString() + ' мес')
 		},
 		onUpdate: data => {
-			$('.month_range2 .input').val(data.from.toLocaleString() + ' мес')
+			setTimeout(() => $('.month_range2 .input').val(data.from.toLocaleString() + ' мес'))
 		}
 	}).data('ionRangeSlider')
 
