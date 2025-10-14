@@ -680,6 +680,25 @@ document.addEventListener('DOMContentLoaded', function() {
 
 		startSMSTimer()
 	})
+
+
+	// Confirm code
+	$('.confirm_code input').on('input', function () {
+		const $this = $(this),
+			value = $this.val()
+
+		if (value.length === 1) {
+			$this.next('input').focus()
+		}
+	})
+
+	$('.confirm_code input').on('keydown', function (e) {
+		const $this = $(this)
+
+		if (e.key === 'Backspace' && !$this.val()) {
+			$this.prev('input').focus()
+		}
+	})
 })
 
 
