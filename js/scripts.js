@@ -607,9 +607,9 @@ document.addEventListener('DOMContentLoaded', function() {
 		onChange: data => {
 			$('.sum_range .input').val(data.from.toLocaleString() + ' ₽')
 		},
-		onUpdate: data => {
-			setTimeout(() => $('.sum_range .input').val(data.from.toLocaleString() + ' ₽'))
-		}
+		// onUpdate: data => {
+		// 	setTimeout(() => $('.sum_range .input').val(data.from.toLocaleString() + ' ₽'))
+		// }
 	}).data('ionRangeSlider')
 
 	$('.sum_range .input').keyup(function () {
@@ -628,9 +628,9 @@ document.addEventListener('DOMContentLoaded', function() {
 		onChange: data => {
 			$('.month_range .input').val(data.from.toLocaleString() + ' мес')
 		},
-		onUpdate: data => {
-			setTimeout(() => $('.month_range .input').val(data.from.toLocaleString() + ' мес'))
-		}
+		// onUpdate: data => {
+		// 	setTimeout(() => $('.month_range .input').val(data.from.toLocaleString() + ' мес'))
+		// }
 	}).data('ionRangeSlider')
 
 	$('.month_range .input').keyup(function () {
@@ -640,23 +640,65 @@ document.addEventListener('DOMContentLoaded', function() {
 	})
 
 
-	monthRange2 = $('#month_range2').ionRangeSlider({
+	carPriceRange = $('#car_price_range').ionRangeSlider({
+		min: 10000,
+		max: 500000,
+		from: 100000,
+		step: 500,
+		postfix: ' ₽',
+		onChange: data => {
+			$('.price_range .input').val(data.from.toLocaleString() + ' ₽')
+		},
+		// onUpdate: data => {
+		// 	setTimeout(() => $('.price_range .input').val(data.from.toLocaleString() + ' ₽'))
+		// }
+	}).data('ionRangeSlider')
+
+	$('.price_range .input').keyup(function () {
+		carPriceRange.update({
+			from: parseInt($('.price_range .input').val().replace(/[^\d]/g, ""), 10),
+		})
+	})
+
+
+	firstPaymentRange = $('#first_payment_range').ionRangeSlider({
+		min: 10000,
+		max: 500000,
+		from: 100000,
+		step: 500,
+		postfix: ' ₽',
+		onChange: data => {
+			$('.first_payment .input').val(data.from.toLocaleString() + ' ₽')
+		},
+		// onUpdate: data => {
+		// 	setTimeout(() => $('.first_payment .input').val(data.from.toLocaleString() + ' ₽'))
+		// }
+	}).data('ionRangeSlider')
+
+	$('.first_payment .input').keyup(function () {
+		firstPaymentRange.update({
+			from: parseInt($('.first_payment .input').val().replace(/[^\d]/g, ""), 10),
+		})
+	})
+
+
+	loanTermRange = $('#loan_term_range').ionRangeSlider({
 		min: 3,
 		max: 60,
 		from: 30,
 		step: 1,
 		postfix: ' мес',
 		onChange: data => {
-			$('.month_range2 .input').val(data.from.toLocaleString() + ' мес')
+			$('.loan_term .input').val(data.from.toLocaleString() + ' мес')
 		},
-		onUpdate: data => {
-			setTimeout(() => $('.month_range2 .input').val(data.from.toLocaleString() + ' мес'))
-		}
+		// onUpdate: data => {
+		// 	setTimeout(() => $('.loan_term .input').val(data.from.toLocaleString() + ' мес'))
+		// }
 	}).data('ionRangeSlider')
 
-	$('.month_range2 .input').keyup(function () {
-		monthRange2.update({
-			from: parseInt($('.month_range2 .input').val().replace(/[^\d]/g, ""), 10),
+	$('.loan_term .input').keyup(function () {
+		loanTermRange.update({
+			from: parseInt($('.loan_term .input').val().replace(/[^\d]/g, ""), 10),
 		})
 	})
 
