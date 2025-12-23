@@ -402,6 +402,16 @@
 
 
 
+    /*----------------------
+        Payment schedule
+    ----------------------*/
+    .payment_schedule .data
+    {
+        flex-wrap: wrap;
+    }
+
+
+
     /*------------
         Footer
     ------------*/

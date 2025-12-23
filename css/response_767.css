@@ -471,6 +471,46 @@
 
 
 
+    /*----------------------
+        Payment schedule
+    ----------------------*/
+    .payment_schedule .data
+    {
+        justify-content: space-between;
+    }
+
+
+    .payment_schedule .data > *
+    {
+        width: auto;
+    }
+
+
+    .payment_schedule .table_wrap
+    {
+        overflow-x: auto;
+        overflow-y: hidden;
+
+        width: calc(100% + var(--cont_padding_double));
+        margin-inline: calc(var(--cont_padding) * -1);
+        margin-top: var(--block_padding_big);
+        padding-inline: var(--cont_padding);
+    }
+
+
+    .payment_schedule table
+    {
+        width: 740px;
+    }
+
+
+    .payment_schedule .text_block
+    {
+        margin-top: var(--cont_padding);
+    }
+
+
+
     /*------------
         Footer
     ------------*/
@@ -546,5 +586,23 @@
     {
         width: 100%;
         margin-left: 0;
+    }
+
+
+
+    /*------------------------------
+        PopUp - Payment schedule
+    ------------------------------*/
+    #payment_schedule_modal
+    {
+        padding: var(--cont_padding);
+    }
+
+
+    #payment_schedule_modal > .f-button.is-close-btn,
+    .is-compact #payment_schedule_modal > .f-button.is-close-btn
+    {
+        top: 21px;
+        right: 24px;
     }
 }

@@ -839,6 +839,22 @@
 
 
 
+    /*----------------------
+        Payment schedule
+    ----------------------*/
+    .payment_schedule .data > *
+    {
+        gap: var(--gap);
+    }
+
+
+    .payment_schedule table td
+    {
+        height: 52px;
+    }
+
+
+
     /*------------
         Footer
     ------------*/

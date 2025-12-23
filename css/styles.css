@@ -5948,6 +5948,137 @@ aside .links a.active
 
 
 
+/*----------------------
+    Payment schedule
+----------------------*/
+.payment_schedule .data
+{
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+
+    padding: var(--block_padding_small);
+
+    border-radius: var(--border_radius);
+    background: var(--white_color);
+    box-shadow: 0 2px 10px 0 rgba(27, 22, 188, .20);
+
+    gap: var(--gap_big);
+}
+
+
+.payment_schedule .data .label
+{
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 140%;
+
+    color: var(--text_grey);
+}
+
+
+.payment_schedule .data > *
+{
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+
+    gap: 15px;
+}
+
+
+.payment_schedule .data .val
+{
+    font-size: var(--font_size_big);
+    font-weight: 600;
+    line-height: calc(100% + 10px);
+}
+
+
+.payment_schedule .table_wrap
+{
+    margin-top: var(--block_padding);
+}
+
+
+.payment_schedule table
+{
+    width: 100%;
+
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+
+.payment_schedule table th
+{
+    padding-bottom: 9px;
+
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 140%;
+
+    text-align: left;
+    vertical-align: bottom;
+
+    color: var(--text_grey);
+    border-bottom: 1px solid var(--grey_color);
+}
+
+
+.payment_schedule table th + th
+{
+    padding-left: var(--gap);
+}
+
+
+.payment_schedule table td
+{
+    width: 150px;
+    height: 66px;
+    padding-block: 10px;
+
+    table-layout: fixed;
+
+    font-weight: 500;
+    line-height: 160%;
+
+    text-align: left;
+    vertical-align: middle;
+
+    border-bottom: 1px solid var(--grey_color);
+}
+
+
+.payment_schedule table td:nth-child(1)
+{
+    width: 50px;
+}
+
+
+.payment_schedule table td:nth-child(2)
+{
+    width: 120px;
+}
+
+
+.payment_schedule table td + td
+{
+    padding-left: var(--gap);
+}
+
+
+
+.payment_schedule .text_block
+{
+    margin-top: var(--block_padding);
+}
+
+
+
 /*------------
     Footer
 ------------*/
@@ -6408,4 +6539,30 @@ footer .copyright
 #new_password_modal .submit
 {
     padding-top: var(--cont_padding_half);
+}
+
+
+
+/*------------------------------
+    PopUp - Payment schedule
+------------------------------*/
+#payment_schedule_modal
+{
+    width: 900px;
+    padding: var(--block_padding_big);
+
+    background: var(--accent_color_soft);
+}
+
+
+#payment_schedule_modal > .f-button.is-close-btn,
+.is-compact #payment_schedule_modal > .f-button.is-close-btn
+{
+    top: 35px;
+}
+
+
+#payment_schedule_modal .payment_schedule
+{
+    margin-top: var(--block_padding);
 }
