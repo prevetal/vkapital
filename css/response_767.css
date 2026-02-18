@@ -439,7 +439,8 @@
     }
 
 
-    .calc .form .columns > *
+    .calc .form .columns > *,
+    .calc .form .columns > *.width1of3
     {
         width: calc(100% - var(--form_columns_offset));
     }

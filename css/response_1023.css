@@ -603,6 +603,12 @@
     }
 
 
+    .calc .form .columns > *.width1of3
+    {
+        width: calc(50% - var(--form_columns_offset));
+    }
+
+
 
     /*------------
         Footer
