@@ -61,6 +61,12 @@
     /*---------------
         Page head
     ---------------*/
+    .page_head.s_p
+    {
+        padding-block: 0 var(--block_padding);
+    }
+
+
     .page_head .back a
     {
         padding: 8px 16px 8px 8px;

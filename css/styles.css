@@ -1457,13 +1457,54 @@ aside .links a.active
     padding-block: 0 var(--block_offset);
 }
 
+.page_head.s_p
+{
+    padding-block: 0 var(--gap_big);
+}
+
 
 .page_head .cont
 {
     display: flex;
     flex-direction: column;
 
-    gap: var(--block_padding);
+    gap: var(--gap_big);
+}
+
+
+
+.breadcrumbs
+{
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 140%;
+
+    color: var(--text_grey);
+}
+
+
+.breadcrumbs a
+{
+    transition: color .2s linear;
+    text-decoration: none;
+
+    color: currentColor;
+}
+
+
+.breadcrumbs a:hover
+{
+    color: var(--accent_color_h);
+}
+
+
+.breadcrumbs .sep
+{
+    display: inline-block;
+
+    margin-inline: 6px;
+
+    vertical-align: top;
 }
 
 
@@ -1525,6 +1566,7 @@ aside .links a.active
 {
     width: 1216px;
     max-width: 100%;
+    margin-top: var(--gap_big);
 }
 
 
@@ -1536,6 +1578,8 @@ aside .links a.active
     align-items: flex-start;
     flex-wrap: wrap;
     justify-content: flex-start;
+
+    margin-top: var(--gap_big);
 
     gap: var(--gap_big);
 }
