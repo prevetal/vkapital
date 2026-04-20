@@ -761,6 +761,12 @@ button
 /*------------
     Header
 ------------*/
+.header_wrap
+{
+    margin-bottom: 20px;
+}
+
+
 header
 {
     position: relative;
@@ -771,6 +777,14 @@ header
     margin-bottom: 20px;
 
     z-index: 9;
+
+    background: var(--bg);
+}
+
+
+.header_wrap header
+{
+    margin-bottom: 0;
 }
 
 
@@ -1029,6 +1043,50 @@ header .contacts .btn:hover
 }
 
 
+header .contacts .messengers
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    gap: var(--gap);
+}
+
+
+header .contacts .messengers a
+{
+    display: block;
+
+    width: 30px;
+
+    transition: color .2s linear;
+    text-decoration: none;
+
+    color: rgb(var(--accent_color));
+    border-radius: 50%;
+
+    aspect-ratio: 1 / 1;
+}
+
+
+header .contacts .messengers .icon
+{
+    display: block;
+
+    width: 100%;
+
+    aspect-ratio: 1 / 1;
+}
+
+
+header .contacts .messengers a:hover
+{
+    color: var(--accent_color_h);
+}
+
+
 
 header .logo
 {
@@ -1259,22 +1317,33 @@ header .account .btn.active
 
 
 
+header.fixed
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+}
+
+
+
 /*-----------------
     Mob. header
 -----------------*/
 .mob_header
 {
-    position: relative;
+    position: sticky;
     top: 0;
-    left: 0;
 
     display: none;
 
-    width: 100%;
     margin-bottom: var(--cont_padding);
     padding: var(--block_padding_small) 0;
 
     z-index: 9;
+
+    background: var(--bg);
 }
 
 
@@ -1562,6 +1631,28 @@ aside .links a.active
 
 
 
+.page_head .row
+{
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.page_head .row .data
+{
+    display: flex;
+    flex-direction: column;
+
+    width: calc(100% - 380px);
+
+    gap: var(--gap_big);
+}
+
+
+
 .page_head .text_block
 {
     width: 1216px;
@@ -1615,6 +1706,80 @@ aside .links a.active
 {
     color: var(--white_color);
     background: rgb(var(--accent_color));
+}
+
+
+
+.page_head .rating
+{
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    width: 340px;
+    max-width: 100%;
+
+    gap: var(--block_padding_big);
+}
+
+
+.page_head .rating .item
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: calc(50% - var(--block_padding_big) / 2);
+
+    text-align: center;
+
+    gap: var(--gap);
+}
+
+
+.page_head .rating .logo
+{
+    display: flex;
+    overflow: hidden;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 100px;
+    margin-bottom: var(--gap);
+
+    border-radius: var(--border_radius_small);
+
+    aspect-ratio: 1 / 1;
+}
+
+
+.page_head .rating .logo img
+{
+    display: block;
+
+    width: 100%;
+
+    aspect-ratio: 1 / 1;
+}
+
+
+.page_head .rating .val
+{
+    font-size: var(--font_size_title);
+    font-weight: 600;
+    line-height: 120%;
+}
+
+
+.page_head .rating .name
+{
+    font-weight: 500;
+    line-height: 160%;
 }
 
 
@@ -6119,6 +6284,84 @@ aside .links a.active
 .payment_schedule .text_block
 {
     margin-top: var(--block_padding);
+}
+
+
+
+/*---------------
+    Prev/Next
+---------------*/
+.prev_next
+{
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    margin-top: var(--block_padding_big);
+
+    gap: var(--block_padding_big);
+}
+
+
+.prev_next a
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    height: 37px;
+    padding: var(--gap);
+
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 140%;
+
+    transition: color .2s linear;
+    text-decoration: none;
+
+    color: currentColor;
+    border-radius: 6px;
+    background: var(--accent_color_soft);
+
+    gap: var(--gap);
+}
+
+
+.prev_next a.prev
+{
+    padding-right: 15px;
+}
+
+
+.prev_next a.next
+{
+    padding-left: 15px;
+}
+
+
+.prev_next a .icon
+{
+    display: block;
+
+    width: 16px;
+
+    aspect-ratio: 1 / 1;
+}
+
+
+.prev_next a.prev .icon
+{
+    transform: scale(-1, 1);
+}
+
+
+.prev_next a:hover
+{
+    color: rgb(var(--accent_color));
 }
 
 

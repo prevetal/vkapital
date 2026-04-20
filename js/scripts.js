@@ -438,7 +438,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	}
 
 
-	if (is_touch_device()) {
+	if (is_touch_device() || !is_touch_device() && WW < 1024) {
 		const subMenus = document.querySelectorAll('header .menu .sub_menu')
 
 		// Submenu on the touch screen
@@ -765,6 +765,29 @@ document.addEventListener('DOMContentLoaded', function() {
 })
 
 
+window.addEventListener('load', function () {
+	// Fixed header
+	headerInit = true,
+	headerHeight = $('header').outerHeight()
+
+	$('header').wrap('<div class="header_wrap"></div>')
+	$('.header_wrap').height(headerHeight)
+
+	headerInit && $(window).scrollTop() > 0
+		? $('header').addClass('fixed')
+		: $('header').removeClass('fixed')
+})
+
+
+
+window.addEventListener('scroll', function () {
+	// Fixed header
+	typeof headerInit !== 'undefined' && headerInit && $(window).scrollTop() > 0
+		? $('header').addClass('fixed')
+		: $('header').removeClass('fixed')
+})
+
+
 
 window.addEventListener('resize', function () {
 	WH = window.innerHeight || document.clientHeight || BODY.clientHeight
@@ -774,6 +797,28 @@ window.addEventListener('resize', function () {
 	if (typeof WW !== 'undefined' && WW != windowW) {
 		// Overwrite window width
 		WW = window.innerWidth || document.clientWidth || BODY.clientWidth
+
+
+		// Fixed header
+		headerInit = false
+		$('.header_wrap').height('auto')
+
+		setTimeout(() => {
+			headerInit = true
+			headerHeight = $('header').outerHeight()
+
+			$('.header_wrap').height(headerHeight)
+
+			headerInit && $(window).scrollTop() > 0
+				? $('header').addClass('fixed')
+				: $('header').removeClass('fixed')
+		}, 100)
+
+
+		// Overlay
+		if (WW > 1024) {
+			$('.overlay').hide()
+		}
 
 
 		// Mob. version

@@ -84,7 +84,15 @@
     /*------------
         Header
     ------------*/
-    header
+    .header_wrap
+    {
+        height: auto !important;
+        margin: 0;
+    }
+
+
+    header,
+    header.fixed
     {
         position: fixed;
         top: 0;
@@ -255,6 +263,13 @@
     /*---------------
         Page head
     ---------------*/
+    .page_head .row .data
+    {
+        width: 100%;
+    }
+
+
+
     .page_head .links
     {
         display: block;
@@ -306,6 +321,22 @@
     .page_head .links > * + *
     {
         margin-left: 8px;
+    }
+
+
+
+    .page_head .rating
+    {
+        width: 320px;
+        margin-top: var(--block_padding_big);
+
+        gap: var(--gap_big);
+    }
+
+
+    .page_head .rating .item
+    {
+        width: calc(50% - var(--gap_big) / 2);
     }
 
 
