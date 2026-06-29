@@ -69,9 +69,9 @@
 
     .page_head .back a
     {
-        padding: 8px 16px 8px 8px;
-
         font-size: var(--font_size_small);
+
+        padding: 8px 16px 8px 8px;
 
         gap: var(--gap_small);
     }
@@ -98,6 +98,21 @@
     /*------------------
         Form elements
     ------------------*/
+    .form .checkbox
+    {
+        font-size: 12px;
+
+        min-height: 20px;
+        padding-left: 30px;
+    }
+
+
+    .form .checkbox .check
+    {
+        top: 2px;
+    }
+
+
     .form .agree
     {
         font-size: 11px;
@@ -158,6 +173,7 @@
         bottom: 0;
 
         width: 100%;
+
         margin-block: auto;
         padding-inline: var(--cont_padding_half);
     }
@@ -420,7 +436,6 @@
     .calc .data
     {
         padding-inline: var(--cont_padding);
-
         gap: 20px;
     }
 
@@ -499,8 +514,9 @@
         overflow-y: hidden;
 
         width: calc(100% + var(--cont_padding_double));
-        margin-inline: calc(var(--cont_padding) * -1);
         margin-top: var(--block_padding_big);
+
+        margin-inline: calc(var(--cont_padding) * -1);
         padding-inline: var(--cont_padding);
     }
 

@@ -2298,6 +2298,101 @@ aside .links a.active
 }
 
 
+.form .checkbox
+{
+    position: relative;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    min-height: 32px;
+    padding-left: 35px;
+
+    line-height: 160%;
+
+    cursor: pointer;
+}
+
+
+.form .checkbox input
+{
+    display: none;
+}
+
+
+.form .checkbox .check
+{
+    position: absolute;
+    top: 6px;
+    left: 0;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 20px;
+    height: 20px;
+
+    transition: .2s linear;
+
+    border: 1px solid var(--grey_color);
+    border-radius: 6px;
+    background: var(--white_color);
+}
+
+
+.form .checkbox .check svg
+{
+    display: block;
+
+    width: 16px;
+    height: 16px;
+
+    transition: opacity .2s linear;
+
+    opacity: 0;
+}
+
+
+.form .checkbox a
+{
+    transition: color .2s linear;
+    text-decoration: none;
+
+    color: rgb(var(--accent_color));
+}
+
+
+.form .checkbox a:hover
+{
+    color: var(--accent_color_h);
+}
+
+
+.form .checkbox input:checked ~ .check
+{
+    border-color: var(--text_grey);
+    background: var(--accent_color_soft);
+}
+
+
+.form .checkbox input:checked ~ .check svg
+{
+    opacity: 1;
+}
+
+
+.form .checkbox.error .check
+{
+    border-color: var(--red_color);
+}
+
+
 .form .exp
 {
     margin-top: 15px;
