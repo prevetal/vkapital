@@ -69,11 +69,11 @@
 
     .page_head .back a
     {
-        font-size: var(--font_size_small);
+        gap: var(--gap_small);
 
         padding: 8px 16px 8px 8px;
 
-        gap: var(--gap_small);
+        font-size: var(--font_size_small);
     }
 
 
@@ -100,10 +100,10 @@
     ------------------*/
     .form .checkbox
     {
-        font-size: 12px;
-
         min-height: 20px;
         padding-left: 30px;
+
+        font-size: 12px;
     }
 
 
@@ -173,7 +173,6 @@
         bottom: 0;
 
         width: 100%;
-
         margin-block: auto;
         padding-inline: var(--cont_padding_half);
     }
@@ -190,6 +189,7 @@
     .main_slider .items.columns
     {
         column-gap: 0;
+
         column-count: 1;
     }
 
@@ -435,8 +435,9 @@
     ----------*/
     .calc .data
     {
-        padding-inline: var(--cont_padding);
         gap: 20px;
+
+        padding-inline: var(--cont_padding);
     }
 
 
@@ -514,9 +515,8 @@
         overflow-y: hidden;
 
         width: calc(100% + var(--cont_padding_double));
-        margin-top: var(--block_padding_big);
-
         margin-inline: calc(var(--cont_padding) * -1);
+        margin-top: var(--block_padding_big);
         padding-inline: var(--cont_padding);
     }
 
@@ -530,6 +530,16 @@
     .payment_schedule .text_block
     {
         margin-top: var(--cont_padding);
+    }
+
+
+
+    /*-----------------
+        Cookie info
+    -----------------*/
+    .cookie_info br
+    {
+        display: none;
     }
 
 
@@ -570,7 +580,6 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
-
         gap: var(--block_offset);
     }
 

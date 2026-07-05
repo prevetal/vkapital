@@ -6,6 +6,8 @@
     -------------------*/
     :root
     {
+        --gap: 8px;
+
         --cont_padding: 24px;
         --sidebar_width: 260px;
         --custom_scroll_width: 5px;
@@ -23,7 +25,6 @@
         --border_radius: 16px;
         --border_radius_big: 24px;
         --gap_small: 4px;
-        --gap: 8px;
         --gap_big: 16px;
     }
 
@@ -89,17 +90,17 @@
     ----------------*/
     .pagination .prev
     {
-        padding: 8px 16px 8px 12px;
-
         gap: var(--gap_small);
+
+        padding: 8px 16px 8px 12px;
     }
 
 
     .pagination .next
     {
-        padding: 8px 12px 8px 16px;
-
         gap: var(--gap_small);
+
+        padding: 8px 12px 8px 16px;
     }
 
 
@@ -195,6 +196,19 @@
     header .city .current span
     {
         min-width: 0;
+    }
+
+
+    header .city .confirm
+    {
+        min-width: 261px;
+    }
+
+
+    header .city .confirm .mini_modal_btn,
+    header .city .confirm .close_btn
+    {
+        height: 36px;
     }
 
 
@@ -354,9 +368,9 @@
 
     .action_block .info
     {
-        width: 388px;
-
         gap: var(--cont_padding);
+
+        width: 388px;
     }
 
 
@@ -793,9 +807,9 @@
     ----------*/
     .calc .data
     {
-        padding-inline: var(--block_padding_big);
-
         gap: var(--gap_big);
+
+        padding-inline: var(--block_padding_big);
     }
 
 
@@ -866,10 +880,10 @@
 
     footer .contacts
     {
+        gap: var(--cont_padding);
+
         width: 240px;
         min-width: 240px;
-
-        gap: var(--cont_padding);
     }
 
 
@@ -894,9 +908,9 @@
 
     footer .menu .item
     {
-        width: calc(50% - var(--block_padding_big) * .5);
-
         gap: var(--gap_big);
+
+        width: calc(50% - var(--block_padding_big) * .5);
     }
 
 

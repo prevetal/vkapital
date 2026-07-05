@@ -340,6 +340,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
 			if (is_touch_device()) $('body').css('cursor', 'pointer')
 		}
+
+		$('header .city .confirm').fadeOut(100)
 	})
 
 	// Close the popup when clicking outside of it
@@ -761,6 +763,22 @@ document.addEventListener('DOMContentLoaded', function() {
 		if (e.key === 'Backspace' && !$this.val()) {
 			$this.prev('input').focus()
 		}
+	})
+
+
+	// Confirm city
+	$('header .city .confirm .close_btn').click(function (e) {
+		e.preventDefault()
+
+		$('header .city .confirm').fadeOut(200)
+	})
+
+
+	// Cookie info
+	$('.cookie_info .btn').click(function (e) {
+		e.preventDefault()
+
+		$('.cookie_info').fadeOut(200)
 	})
 })
 

@@ -165,12 +165,18 @@
     }
 
 
+    header .city .confirm
+    {
+        display: none;
+    }
+
+
 
     header .contacts
     {
-        width: 100%;
-
         gap: var(--gap_big);
+
+        width: 100%;
     }
 
 
@@ -185,11 +191,10 @@
     header .menu
     {
         flex-direction: column;
+        gap: var(--cont_padding);
 
         width: 100%;
         margin-left: 0;
-
-        gap: var(--cont_padding);
     }
 
 
@@ -327,10 +332,10 @@
 
     .page_head .rating
     {
+        gap: var(--gap_big);
+
         width: 320px;
         margin-top: var(--block_padding_big);
-
-        gap: var(--gap_big);
     }
 
 
@@ -653,11 +658,10 @@
     footer .menu
     {
         order: 2;
+        gap: 0;
 
         width: calc(100% + var(--block_padding_big) * .5);
         margin-left: calc(var(--block_padding_big) * -.5);
-
-        gap: 0;
     }
 
 

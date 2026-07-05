@@ -434,8 +434,33 @@
     .prev_next
     {
         justify-content: space-between;
-
         gap: var(--gap_big);
+    }
+
+
+
+    /*-----------------
+        Cookie info
+    -----------------*/
+    .cookie_info
+    {
+        bottom: 12px;
+
+        max-width: calc(100% - var(--cont_padding));
+        padding: 12px;
+    }
+
+
+    .cookie_info .text
+    {
+        width: calc(100% - 104px);
+    }
+
+
+    .cookie_info .btn
+    {
+        width: 88px;
+        height: 36px;
     }
 
 
